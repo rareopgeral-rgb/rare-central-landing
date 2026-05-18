@@ -270,16 +270,15 @@
   </div>
 
   <div class="step-box">
-    <h3>Passo 4 — Primeira abertura (importante)</h3>
-    <p>O macOS pode bloquear o app na primeira vez com a mensagem:<br>
-    <em>"não pode ser aberto porque é de um desenvolvedor não identificado"</em></p>
-    <p>Para resolver:</p>
-    <ol>
-      <li>Clique com o <strong>botão direito</strong> no ícone do app</li>
-      <li>Selecione <strong>Abrir</strong></li>
-      <li>Na caixa que aparecer, clique em <strong>Abrir</strong> novamente</li>
-    </ol>
-    <p>Após isso, o app abre normalmente sempre.</p>
+    <h3>Passo 4 — Liberar o app (fazer só uma vez)</h3>
+    <p>O macOS bloqueia apps sem assinatura da Apple. Para liberar de vez, abra o <strong>Terminal</strong> e cole o comando abaixo:</p>
+    <div style="background:#080b08;border-radius:8px;padding:14px 18px;margin:12px 0;">
+      <code style="background:transparent;border:none;color:#00e676;font-size:13px;font-family:'SF Mono','Menlo',monospace;">
+        xattr -rd com.apple.quarantine /Applications/RareCentral.app
+      </code>
+    </div>
+    <p>Pressione <strong>Enter</strong>. Pronto — o app abre normalmente de agora em diante, sem nenhum aviso.</p>
+    <p style="font-size:13px;color:#888;margin-top:8px;">Para abrir o Terminal: <strong>Cmd + Espaço</strong> → digitar "Terminal" → Enter.</p>
   </div>
 
   <div class="step-box">
@@ -336,8 +335,8 @@
   <h2><span class="num">6</span> Problemas comuns</h2>
   <div class="problems">
     <div class="problem">
-      <div class="q">App não abre no Mac</div>
-      <div class="a">Clique com botão direito → Abrir → confirmar na caixa de diálogo</div>
+      <div class="q">macOS continua pedindo permissão toda vez</div>
+      <div class="a">Abra o Terminal e rode: xattr -rd com.apple.quarantine /Applications/RareCentral.app — resolve de vez</div>
     </div>
     <div class="problem">
       <div class="q">Legenda falhou</div>
