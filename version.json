@@ -1,7 +1,7 @@
 {
-  "version": "1.2.3",
-  "min_version": "1.2.3",
-  "changelog": "Headline text overlay no vídeo + Hook Duplo (2 blocos de hook concatenados)",
-  "download_mac": "https://github.com/rareopgeral-rgb/rare-central-landing/releases/download/v1.2.3/RareCentral-Mac.dmg",
-  "download_win": "https://github.com/rareopgeral-rgb/rare-central-landing/releases/download/v1.2.3/RareCentral-Windows.exe"
+  "version": "1.2.6",
+  "min_version": "1.2.4",
+  "changelog": "Fix: janela CMD não pisca mais no Windows durante o processamento",
+  "download_mac": "https://github.com/rareopgeral-rgb/rare-central-landing/releases/download/v1.2.6/RareCentral-Mac.dmg",
+  "download_win": "https://github.com/rareopgeral-rgb/rare-central-landing/releases/download/v1.2.6/RareCentral-Windows.exe"
 }
