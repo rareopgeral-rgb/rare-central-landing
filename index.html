@@ -2,1541 +2,516 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Playbook Copa 2026 — TikTok Shop</title>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rare Central — 50 vídeos em 1 hora</title>
 <style>
-:root {
-  --black: #060608;
-  --surface1: #0c0c12;
-  --surface2: #121218;
-  --surface3: #1a1a24;
-  --surface4: #22222e;
-  --border: #2a2a38;
-  --border2: #3a3a50;
-  --green: #00e676;
-  --green2: #00c853;
-  --green-dim: #00e67620;
-  --yellow: #ffd740;
-  --yellow-dim: #ffd74018;
-  --red: #ff5252;
-  --red-dim: #ff525218;
-  --blue: #64b5f6;
-  --blue-dim: #64b5f618;
-  --purple: #ce93d8;
-  --orange: #ffab40;
-  --text: #e8e8f0;
-  --muted: #6b6b88;
-  --muted2: #3e3e52;
-  --font-display: 'Syne', sans-serif;
-  --font-body: 'Inter', sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
-}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;font-size:16px}
-body{font-family:var(--font-body);background:var(--black);color:var(--text);line-height:1.65;overflow-x:hidden}
+  :root {
+    --green:     #00e676;
+    --green-dim: #00c85a;
+    --green-bg:  rgba(0,230,118,0.08);
+    --dark:      #080b08;
+    --dark2:     #0e130e;
+    --dark3:     #141a14;
+    --border:    rgba(0,230,118,0.15);
+    --text:      #f0f5f0;
+    --muted:     #7a917a;
+  }
 
-/* SCROLLBAR */
-::-webkit-scrollbar{width:6px;height:6px}
-::-webkit-scrollbar-track{background:var(--surface1)}
-::-webkit-scrollbar-thumb{background:var(--border2);border-radius:3px}
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-/* HERO */
-.hero{
-  position:relative;overflow:hidden;
-  background:linear-gradient(160deg,#060608 0%,#0a0f0c 50%,#060a14 100%);
-  padding:80px 24px 60px;
-  border-bottom:1px solid var(--border);
-}
-.hero-pattern{
-  position:absolute;inset:0;
-  background-image:radial-gradient(circle at 20% 50%, #00e67608 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, #ffd74008 0%, transparent 40%),
-    radial-gradient(circle at 60% 80%, #64b5f606 0%, transparent 40%);
-  pointer-events:none;
-}
-.hero-ball{
-  position:absolute;right:-60px;top:-60px;
-  font-size:320px;opacity:.025;line-height:1;
-  transform:rotate(20deg);pointer-events:none;
-  user-select:none;
-}
-.hero-inner{max-width:900px;margin:0 auto;position:relative}
-.hero-eyebrow{
-  display:inline-flex;align-items:center;gap:8px;
-  background:var(--green-dim);border:1px solid #00e67635;
-  color:var(--green);font-size:10px;font-weight:600;
-  letter-spacing:.2em;text-transform:uppercase;
-  padding:6px 14px;border-radius:20px;margin-bottom:24px;
-}
-.hero-eyebrow::before{
-  content:'';width:6px;height:6px;
-  background:var(--green);border-radius:50%;
-  animation:blink 2s ease-in-out infinite;
-}
-@keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
-.hero h1{
-  font-family:var(--font-display);
-  font-size:clamp(28px,5.5vw,52px);
-  font-weight:800;line-height:1.08;
-  letter-spacing:-.03em;
-  margin-bottom:16px;
-}
-.hero h1 .accent{
-  background:linear-gradient(90deg,var(--green),var(--blue));
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
-}
-.hero-sub{font-size:15px;color:var(--muted);max-width:560px;line-height:1.7;margin-bottom:40px}
-.hero-kpis{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
-  gap:1px;background:var(--border);
-  border:1px solid var(--border);border-radius:12px;overflow:hidden;
-}
-.kpi{
-  background:var(--surface1);padding:18px 20px;
-}
-.kpi-num{
-  font-family:var(--font-display);font-size:24px;font-weight:800;
-  line-height:1;margin-bottom:4px;
-}
-.kpi-label{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;line-height:1.3}
+  body {
+    font-family: -apple-system, 'Inter', sans-serif;
+    background: var(--dark);
+    color: var(--text);
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
 
-/* NAV TABS */
-.tab-wrapper{
-  position:sticky;top:0;z-index:100;
-  background:rgba(6,6,8,.92);
-  backdrop-filter:blur(12px);
-  border-bottom:1px solid var(--border);
-}
-.tab-nav{
-  max-width:900px;margin:0 auto;
-  display:flex;gap:0;overflow-x:auto;
-  scrollbar-width:none;
-  padding:0 24px;
-}
-.tab-nav::-webkit-scrollbar{display:none}
-.tab-btn{
-  flex-shrink:0;padding:16px 18px;
-  font-family:var(--font-body);font-size:12px;font-weight:600;
-  letter-spacing:.04em;text-transform:uppercase;
-  color:var(--muted);background:none;border:none;
-  border-bottom:2px solid transparent;
-  cursor:pointer;white-space:nowrap;
-  transition:color .2s,border-color .2s;
-}
-.tab-btn:hover{color:var(--text)}
-.tab-btn.active{color:var(--green);border-bottom-color:var(--green)}
+  /* BETA BANNER */
+  .beta-banner {
+    background: var(--green);
+    color: #000;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: .3px;
+  }
+  .beta-banner a { color: #000; text-decoration: underline; }
 
-/* CONTENT */
-.tab-content{display:none}
-.tab-content.active{display:block}
-.page{max-width:900px;margin:0 auto;padding:40px 24px 80px}
+  /* NAV */
+  nav {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 20px 48px;
+    border-bottom: 1px solid var(--border);
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(8,11,8,0.92);
+    backdrop-filter: blur(12px);
+  }
+  .logo {
+    display: flex; align-items: center; gap: 10px;
+    font-size: 16px; font-weight: 800; color: var(--text);
+    text-decoration: none;
+  }
+  .logo-mark {
+    width: 32px; height: 32px; border-radius: 7px;
+    background: var(--green);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 15px; font-weight: 900; color: #000;
+  }
+  .nav-badge {
+    font-size: 11px; font-weight: 700; letter-spacing: .5px;
+    text-transform: uppercase;
+    background: var(--green-bg); color: var(--green);
+    border: 1px solid var(--border);
+    padding: 3px 10px; border-radius: 20px;
+  }
 
-/* SECTION */
-.sec{margin-bottom:56px}
-.sec-head{display:flex;align-items:flex-start;gap:14px;margin-bottom:28px}
-.sec-icon{
-  width:38px;height:38px;flex-shrink:0;
-  border-radius:10px;border:1px solid var(--border);
-  background:var(--surface3);display:flex;align-items:center;
-  justify-content:center;font-size:16px;
-}
-.sec-title{
-  font-family:var(--font-display);font-size:22px;font-weight:800;
-  letter-spacing:-.02em;line-height:1.1;
-}
-.sec-sub{font-size:12px;color:var(--muted);margin-top:4px;letter-spacing:.04em;text-transform:uppercase}
+  /* HERO */
+  .hero {
+    max-width: 900px; margin: 0 auto;
+    padding: 100px 32px 80px;
+    text-align: center;
+  }
+  .hero-label {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 12px; font-weight: 700; letter-spacing: 1px;
+    text-transform: uppercase; color: var(--green);
+    background: var(--green-bg); border: 1px solid var(--border);
+    padding: 6px 16px; border-radius: 20px;
+    margin-bottom: 32px;
+  }
+  .hero-label::before { content: '●'; font-size: 8px; }
 
-/* PROSE */
-p.prose{font-size:14px;color:#9898b8;line-height:1.8;margin-bottom:12px}
-p.prose strong{color:var(--text)}
+  h1 {
+    font-size: clamp(40px, 7vw, 72px);
+    font-weight: 900;
+    letter-spacing: -2px;
+    line-height: 1.05;
+    color: var(--text);
+    margin-bottom: 24px;
+  }
+  h1 em {
+    font-style: normal;
+    color: var(--green);
+  }
 
-/* GRID */
-.g2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0}
-.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:16px 0}
-.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:16px 0}
-@media(max-width:700px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .hero-sub {
+    font-size: 18px; color: var(--muted);
+    max-width: 560px; margin: 0 auto 48px;
+    line-height: 1.7;
+  }
 
-/* CARD */
-.card{
-  background:var(--surface2);border:1px solid var(--border);
-  border-radius:12px;padding:18px;
-}
-.card.green{background:var(--green-dim);border-color:#00e67628}
-.card.yellow{background:var(--yellow-dim);border-color:#ffd74028}
-.card.red{background:var(--red-dim);border-color:#ff525228}
-.card.blue{background:var(--blue-dim);border-color:#64b5f628}
-.card-tag{
-  font-size:9px;font-weight:700;letter-spacing:.15em;
-  text-transform:uppercase;margin-bottom:10px;
-}
-.card-num{
-  font-family:var(--font-display);font-size:30px;font-weight:800;
-  line-height:1;margin-bottom:6px;
-}
-.card-text{font-size:12px;color:var(--muted);line-height:1.5}
+  .hero-cta {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: var(--green); color: #000;
+    font-size: 15px; font-weight: 800;
+    padding: 16px 36px; border-radius: 8px;
+    text-decoration: none; transition: opacity .15s;
+  }
+  .hero-cta:hover { opacity: .88; }
 
-/* ALERT */
-.alert{
-  display:flex;gap:12px;padding:14px 16px;
-  border-radius:10px;font-size:13px;line-height:1.65;margin:12px 0;
-}
-.alert.green{background:var(--green-dim);border:1px solid #00e67630;color:#88d8a8}
-.alert.yellow{background:var(--yellow-dim);border:1px solid #ffd74030;color:#c8a858}
-.alert.red{background:var(--red-dim);border:1px solid #ff525230;color:#e88088}
-.alert.blue{background:var(--blue-dim);border:1px solid #64b5f630;color:#80b0d8}
-.alert .icon{font-size:18px;flex-shrink:0;margin-top:1px}
-.alert strong{color:var(--text)}
+  /* STATS */
+  .stats {
+    display: flex; justify-content: center; gap: 60px;
+    padding: 60px 32px;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background: var(--dark2);
+    flex-wrap: wrap;
+  }
+  .stat { text-align: center; }
+  .stat-number {
+    font-size: 48px; font-weight: 900; color: var(--green);
+    letter-spacing: -2px; line-height: 1;
+  }
+  .stat-label {
+    font-size: 13px; color: var(--muted); margin-top: 6px;
+    font-weight: 500; text-transform: uppercase; letter-spacing: .5px;
+  }
 
-/* TIER BADGE */
-.tier{
-  display:inline-flex;align-items:center;justify-content:center;
-  width:28px;height:28px;border-radius:7px;
-  font-family:var(--font-display);font-size:13px;font-weight:800;
-  flex-shrink:0;
-}
-.tier-S{background:#00e67620;color:var(--green);border:1px solid #00e67640}
-.tier-A{background:#64b5f615;color:var(--blue);border:1px solid #64b5f635}
-.tier-B{background:#ffd74015;color:var(--yellow);border:1px solid #ffd74035}
-.tier-C{background:#ff525210;color:var(--red);border:1px solid #ff525230}
+  /* HOW IT WORKS */
+  section { max-width: 900px; margin: 0 auto; padding: 80px 32px; }
+  .section-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 1.2px;
+    text-transform: uppercase; color: var(--green);
+    margin-bottom: 14px;
+  }
+  h2 {
+    font-size: clamp(28px, 4vw, 44px);
+    font-weight: 800; letter-spacing: -1px;
+    margin-bottom: 16px;
+  }
+  .section-sub { font-size: 16px; color: var(--muted); margin-bottom: 48px; }
 
-/* FORMAT CARD */
-.fmt-card{
-  background:var(--surface2);border:1px solid var(--border);
-  border-radius:12px;padding:16px;margin-bottom:10px;
-  transition:border-color .2s;
-}
-.fmt-card:hover{border-color:var(--border2)}
-.fmt-header{display:flex;align-items:center;gap:10px;margin-bottom:10px}
-.fmt-name{font-family:var(--font-display);font-size:15px;font-weight:700;flex:1}
-.fmt-badges{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
-.badge{
-  font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
-  padding:3px 8px;border-radius:4px;
-}
-.badge-green{background:var(--green-dim);color:var(--green)}
-.badge-blue{background:var(--blue-dim);color:var(--blue)}
-.badge-yellow{background:var(--yellow-dim);color:var(--yellow)}
-.badge-red{background:var(--red-dim);color:var(--red)}
-.badge-purple{background:#ce93d818;color:var(--purple)}
-.badge-gray{background:var(--surface4);color:var(--muted)}
-.fmt-hook{
-  font-size:13px;color:#9898b8;font-style:italic;
-  padding:10px 12px;background:var(--surface3);border-radius:6px;
-  margin-bottom:8px;border-left:2px solid var(--border2);
-}
-.fmt-hook strong{color:var(--text);font-style:normal}
-.fmt-scenes{margin-top:8px}
-.scene{
-  display:flex;gap:10px;padding:6px 0;
-  border-bottom:1px solid var(--border);font-size:12px;
-}
-.scene:last-child{border-bottom:none}
-.scene-time{
-  font-family:var(--font-mono);font-size:10px;color:var(--green);
-  min-width:52px;padding-top:1px;font-weight:600;flex-shrink:0;
-}
-.scene-text{color:#9898b8}
-.scene-text strong{color:var(--text)}
-.fmt-script{
-  margin-top:10px;background:var(--surface3);border-radius:8px;
-  padding:12px;border:1px solid var(--border);
-}
-.fmt-script-label{
-  font-size:9px;font-weight:700;letter-spacing:.15em;
-  text-transform:uppercase;color:var(--muted);margin-bottom:8px;
-}
-.fmt-script-text{
-  font-family:var(--font-mono);font-size:11px;
-  color:#9898b8;line-height:1.7;white-space:pre-wrap;
-}
+  .steps {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+  }
+  .step {
+    background: var(--dark2); border: 1px solid var(--border);
+    border-radius: 12px; padding: 28px;
+    transition: border-color .15s;
+  }
+  .step:hover { border-color: var(--green); }
+  .step-num {
+    width: 36px; height: 36px; border-radius: 8px;
+    background: var(--green-bg); border: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px; font-weight: 800; color: var(--green);
+    margin-bottom: 16px;
+  }
+  .step h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+  .step p { font-size: 14px; color: var(--muted); line-height: 1.6; }
 
-/* BAR CHART */
-.bar-row{display:flex;align-items:center;gap:10px;margin:7px 0}
-.bar-label{font-size:12px;color:var(--muted);min-width:130px;text-align:right;flex-shrink:0}
-.bar-track{flex:1;height:8px;background:var(--surface3);border-radius:4px;overflow:hidden}
-.bar-fill{height:100%;border-radius:4px}
-.bar-val{font-family:var(--font-mono);font-size:11px;font-weight:600;min-width:50px;text-align:right}
+  /* FEATURES */
+  .features-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+  }
+  .feature {
+    background: var(--dark2); border: 1px solid var(--border);
+    border-radius: 10px; padding: 22px;
+  }
+  .feature-icon { font-size: 24px; margin-bottom: 12px; }
+  .feature h4 { font-size: 14px; font-weight: 700; margin-bottom: 6px; }
+  .feature p { font-size: 13px; color: var(--muted); line-height: 1.5; }
 
-/* STAT TABLE */
-.stat-table{width:100%;border-collapse:collapse;font-size:13px;margin:12px 0}
-.stat-table th{
-  font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
-  color:var(--muted);text-align:left;padding:8px 12px;
-  border-bottom:1px solid var(--border);
-}
-.stat-table td{
-  padding:10px 12px;border-bottom:1px solid var(--border);
-  color:#8888a8;font-size:12px;
-}
-.stat-table tr:last-child td{border-bottom:none}
-.stat-table td.hl{color:var(--text);font-weight:600;font-family:var(--font-body)}
-.stat-table td.g{color:var(--green);font-weight:700}
-.stat-table td.r{color:var(--red)}
-.stat-table td.y{color:var(--yellow);font-weight:600}
-.stat-table td.b{color:var(--blue)}
-.stat-table td.mono{font-family:var(--font-mono)}
+  /* BETA SECTION */
+  .beta-section {
+    background: var(--dark2);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 60px 32px;
+    text-align: center;
+  }
+  .beta-inner { max-width: 680px; margin: 0 auto; }
+  .beta-inner h2 { margin-bottom: 16px; }
+  .beta-inner p { color: var(--muted); font-size: 15px; margin-bottom: 32px; line-height: 1.7; }
 
-/* HOOK CHIP */
-.hooks-grid{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
-.hook{
-  background:var(--surface3);border:1px solid var(--border);
-  border-radius:8px;padding:8px 12px;font-size:12px;
-  color:#9898b8;cursor:default;transition:border-color .2s,color .2s;
-  line-height:1.4;
-}
-.hook:hover{border-color:var(--border2);color:var(--text)}
-.hook-cat{font-size:9px;font-weight:700;letter-spacing:.1em;
-  text-transform:uppercase;color:var(--muted);display:block;margin-bottom:3px}
+  .rules {
+    text-align: left;
+    background: var(--dark3); border: 1px solid var(--border);
+    border-radius: 10px; padding: 24px 28px;
+    margin-bottom: 32px;
+  }
+  .rules li {
+    font-size: 14px; color: var(--muted);
+    padding: 7px 0;
+    border-bottom: 1px solid rgba(0,230,118,0.06);
+    list-style: none;
+    display: flex; align-items: flex-start; gap: 10px;
+  }
+  .rules li:last-child { border-bottom: none; }
+  .rules li::before { content: '→'; color: var(--green); font-weight: 700; flex-shrink: 0; }
 
-/* TIMELINE */
-.timeline{margin:16px 0}
-.tl-item{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--border)}
-.tl-item:last-child{border-bottom:none}
-.tl-dot-wrap{display:flex;flex-direction:column;align-items:center;gap:0;min-width:12px}
-.tl-dot{width:12px;height:12px;border-radius:50%;flex-shrink:0;margin-top:4px}
-.tl-line{flex:1;width:1px;background:var(--border);margin-top:4px}
-.tl-body{}
-.tl-date{font-family:var(--font-mono);font-size:10px;color:var(--muted);font-weight:600;margin-bottom:4px}
-.tl-title{font-size:14px;font-weight:700;margin-bottom:4px}
-.tl-text{font-size:12px;color:var(--muted);line-height:1.5}
+  .whatsapp-btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: #25d366; color: #fff;
+    font-size: 15px; font-weight: 700;
+    padding: 14px 32px; border-radius: 8px;
+    text-decoration: none; transition: opacity .15s;
+  }
+  .whatsapp-btn:hover { opacity: .88; }
 
-/* OFFER CARD */
-.offer-card{
-  background:var(--surface2);border:1px solid var(--border);
-  border-radius:12px;padding:16px;
-}
-.offer-name{font-family:var(--font-display);font-size:14px;font-weight:700;margin-bottom:8px}
-.offer-row{display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-bottom:1px solid var(--border)}
-.offer-row:last-child{border-bottom:none}
-.offer-k{color:var(--muted)}
-.offer-v{font-weight:600}
+  /* DOWNLOAD */
+  .download-section {
+    background: var(--dark2);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 80px 32px;
+  }
+  .download-inner {
+    max-width: 780px; margin: 0 auto; text-align: center;
+  }
+  .download-inner h2 { margin-bottom: 12px; }
+  .download-inner .section-sub { margin-bottom: 48px; }
 
-/* PRINCIPLE */
-.principle{
-  display:flex;gap:14px;padding:14px;
-  background:var(--surface2);border:1px solid var(--border);
-  border-radius:10px;margin-bottom:8px;
-}
-.p-num{
-  font-family:var(--font-display);font-size:13px;font-weight:800;
-  color:var(--muted);min-width:24px;flex-shrink:0;padding-top:1px;
-}
-.p-text{font-size:13px;color:#9898b8;line-height:1.6}
-.p-text strong{color:var(--text)}
+  .download-cards {
+    display: flex; gap: 20px; justify-content: center;
+    flex-wrap: wrap;
+  }
+  .dl-card {
+    background: var(--dark3);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 32px 36px;
+    width: 300px;
+    text-align: left;
+    transition: border-color .15s;
+  }
+  .dl-card:hover { border-color: var(--green); }
+  .dl-platform {
+    font-size: 11px; font-weight: 700; letter-spacing: 1px;
+    text-transform: uppercase; color: var(--muted);
+    margin-bottom: 10px;
+  }
+  .dl-name {
+    font-size: 20px; font-weight: 800; color: var(--text);
+    margin-bottom: 6px; letter-spacing: -.5px;
+  }
+  .dl-info {
+    font-size: 12px; color: var(--muted);
+    margin-bottom: 24px; line-height: 1.5;
+  }
+  .dl-btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--green); color: #000;
+    font-size: 13px; font-weight: 800;
+    padding: 12px 22px; border-radius: 8px;
+    text-decoration: none; transition: opacity .15s;
+    width: 100%; justify-content: center;
+  }
+  .dl-btn:hover { opacity: .88; }
+  .dl-btn-secondary {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: transparent; color: var(--muted);
+    border: 1px solid var(--border);
+    font-size: 12px; font-weight: 600;
+    padding: 10px 22px; border-radius: 8px;
+    text-decoration: none; transition: all .15s;
+    width: 100%; justify-content: center;
+    margin-top: 10px;
+  }
+  .dl-btn-secondary:hover { color: var(--text); border-color: var(--green); }
 
-/* LIVE SECTION */
-.live-cycle{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
-  gap:10px;margin:16px 0;
-}
-.cycle-block{
-  background:var(--surface3);border:1px solid var(--border);
-  border-radius:10px;padding:14px;text-align:center;
-}
-.cycle-time{
-  font-family:var(--font-mono);font-size:11px;color:var(--green);
-  font-weight:600;margin-bottom:6px;
-}
-.cycle-title{font-size:13px;font-weight:700;margin-bottom:4px}
-.cycle-text{font-size:11px;color:var(--muted);line-height:1.4}
+  .dl-manuals {
+    margin-top: 32px;
+    display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;
+  }
+  .dl-manual-link {
+    font-size: 13px; color: var(--muted);
+    text-decoration: none;
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 8px 16px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    transition: all .15s;
+  }
+  .dl-manual-link:hover { color: var(--green); border-color: var(--green); }
 
-/* CTA BLOCK */
-.cta-block{
-  background:linear-gradient(135deg,var(--green-dim),var(--blue-dim));
-  border:1px solid #00e67630;border-radius:14px;
-  padding:28px;text-align:center;margin-top:40px;
-}
-.cta-block h3{
-  font-family:var(--font-display);font-size:20px;
-  font-weight:800;margin-bottom:8px;
-}
-.cta-block p{font-size:13px;color:var(--muted);line-height:1.7}
+  /* FOOTER */
+  footer {
+    text-align: center; padding: 32px;
+    color: var(--muted); font-size: 12px;
+    border-top: 1px solid var(--border);
+  }
 
-/* DIVIDER */
-hr.div{border:none;border-top:1px solid var(--border);margin:28px 0}
-
-/* QUOTE */
-.quote{
-  padding:16px 20px;margin:16px 0;
-  border-left:3px solid var(--muted2);
-  background:var(--surface2);border-radius:0 8px 8px 0;
-}
-.quote p{font-size:14px;color:#7878a0;font-style:italic;line-height:1.7}
-.quote cite{font-size:11px;color:var(--muted);display:block;margin-top:6px;font-style:normal}
-
-/* PILL */
-.pill-row{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}
-.pill{
-  font-size:11px;padding:4px 10px;border-radius:20px;
-  background:var(--surface3);border:1px solid var(--border);color:var(--muted);
-}
-.pill.green{background:var(--green-dim);border-color:#00e67630;color:var(--green)}
-.pill.yellow{background:var(--yellow-dim);border-color:#ffd74030;color:var(--yellow)}
-.pill.red{background:var(--red-dim);border-color:#ff525230;color:var(--red)}
-.pill.blue{background:var(--blue-dim);border-color:#64b5f630;color:var(--blue)}
-
-/* SECTION LABEL */
-.label{
-  font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;
-  color:var(--muted);margin-bottom:10px;display:block;
-}
-
-/* ACCORDION */
-.acc-item{border:1px solid var(--border);border-radius:10px;margin-bottom:8px;overflow:hidden}
-.acc-trigger{
-  width:100%;text-align:left;background:var(--surface2);
-  border:none;cursor:pointer;padding:14px 16px;
-  display:flex;align-items:center;gap:12px;
-  font-family:var(--font-body);font-size:13px;font-weight:600;
-  color:var(--text);transition:background .2s;
-}
-.acc-trigger:hover{background:var(--surface3)}
-.acc-trigger .acc-arrow{
-  margin-left:auto;font-size:12px;color:var(--muted);
-  transition:transform .25s;flex-shrink:0;
-}
-.acc-trigger.open .acc-arrow{transform:rotate(180deg)}
-.acc-body{display:none;padding:4px 16px 16px;background:var(--surface2)}
-.acc-body.open{display:block}
-
-/* COLAPSE sections */
-@media(max-width:600px){
-  .hero h1{font-size:26px}
-  .tab-btn{padding:12px 12px;font-size:11px}
-  .page{padding:24px 16px 60px}
-}
+  /* GLOW */
+  .glow-line {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--green), transparent);
+    opacity: .4;
+  }
 </style>
 </head>
 <body>
 
+<!-- BETA BANNER -->
+<div class="beta-banner">
+  🔒 Versão Beta — Uso Interno Rare Company &nbsp;|&nbsp;
+  Não poste nos stories &nbsp;|&nbsp;
+  Feedback: <a href="https://chat.whatsapp.com/FQPpcUtqlq23P79yybB81Y">Grupo WhatsApp</a>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="logo">
+    <div class="logo-mark">R</div>
+    Rare Central
+  </a>
+  <div class="nav-badge">Beta v1.2.0</div>
+</nav>
+
 <!-- HERO -->
 <div class="hero">
-  <div class="hero-pattern"></div>
-  <div class="hero-ball">⚽</div>
-  <div class="hero-inner">
-    <div class="hero-eyebrow">Playbook Operacional · TikTok Shop BR · Copa 2026</div>
-    <h1>Como <span class="accent">Explodir</span> as Vendas<br>de Camisa da Seleção<br>no TikTok Shop</h1>
-    <p class="hero-sub">Estudo profundo de formatos de vídeo, live shopping, psicologia do comprador e mecânicas de oferta — calibrado para a janela da Copa 2026 e a operação real.</p>
-    <div class="hero-kpis">
-      <div class="kpi"><div class="kpi-num" style="color:var(--green)">~30%</div><div class="kpi-label">Conversão live commerce (McKinsey)</div></div>
-      <div class="kpi"><div class="kpi-num" style="color:var(--yellow)">161×</div><div class="kpi-label">GMV de lives TikTok Shop BR em 12 meses</div></div>
-      <div class="kpi"><div class="kpi-num" style="color:var(--blue)">+350%</div><div class="kpi-label">Vendas Netshoes nas 48h pós-convocação</div></div>
-      <div class="kpi"><div class="kpi-num" style="color:var(--orange)">59%</div><div class="kpi-label">Brasileiros com intenção de comprar camisa (QualiBest)</div></div>
-      <div class="kpi"><div class="kpi-num" style="color:var(--red)">R$749</div><div class="kpi-label">Nike (jogador) — sua âncora de preço favorita</div></div>
-      <div class="kpi"><div class="kpi-num" style="color:var(--text)">13/06</div><div class="kpi-label">Estreia Brasil × Marrocos — pico de demanda agora</div></div>
+  <div class="hero-label">Ferramenta interna Rare Company</div>
+  <h1>
+    <em>50 vídeos</em><br>em 1 hora.
+  </h1>
+  <p class="hero-sub">
+    Concatene, corte silêncios, aplique velocidade e gere legendas automáticas
+    em lote — sem editar um único vídeo manualmente.
+  </p>
+  <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+    <a href="#download" class="hero-cta">
+      ↓ Baixar agora
+    </a>
+    <a href="#como-usar" class="hero-cta" style="background:transparent;border:1px solid var(--border);color:var(--text);">
+      ▶ Ver como funciona
+    </a>
+  </div>
+</div>
+
+<div class="glow-line"></div>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stat">
+    <div class="stat-number">50+</div>
+    <div class="stat-label">vídeos por hora</div>
+  </div>
+  <div class="stat">
+    <div class="stat-number">3</div>
+    <div class="stat-label">cliques para exportar</div>
+  </div>
+  <div class="stat">
+    <div class="stat-number">100%</div>
+    <div class="stat-label">legendas automáticas</div>
+  </div>
+  <div class="stat">
+    <div class="stat-number">0</div>
+    <div class="stat-label">edições manuais</div>
+  </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<section id="como-usar">
+  <div class="section-label">Como funciona</div>
+  <h2>Do upload ao vídeo pronto<br>em menos de 2 minutos.</h2>
+  <p class="section-sub">Sobe os arquivos, escolhe as opções e clica em iniciar. O resto é automático.</p>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <h3>Sobe os clipes</h3>
+      <p>Arraste os hooks, bodies e CTAs nas áreas de upload. O app emparelha automaticamente na ordem dos nomes.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <h3>Escolhe as opções</h3>
+      <p>Legenda automática, velocidade, corte de silêncio — ativa o que precisa com um clique.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <h3>Clica em Iniciar</h3>
+      <p>Acompanha o processamento em tempo real no log. Cada vídeo é processado em paralelo.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <h3>Baixa o .zip</h3>
+      <p>Todos os vídeos finalizados num único arquivo compactado, prontos para publicar.</p>
+    </div>
+  </div>
+</section>
+
+<div class="glow-line"></div>
+
+<!-- FEATURES -->
+<section>
+  <div class="section-label">Funcionalidades</div>
+  <h2>Tudo que você precisa<br>numa única ferramenta.</h2>
+  <p class="section-sub">Construído para o fluxo real de produção da Rare.</p>
+
+  <div class="features-grid">
+    <div class="feature">
+      <div class="feature-icon">🔗</div>
+      <h4>Concatenação inteligente</h4>
+      <p>Hook + Body + CTA em lote. Suporte a vídeos HeyGen (Hook + Body).</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">💬</div>
+      <h4>Legendas com AssemblyAI</h4>
+      <p>Transcrição automática com timestamps por palavra. 5 estilos visuais. Posição configurável.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">✂️</div>
+      <h4>Corte de silêncio</h4>
+      <p>Remove pausas automaticamente. 3 níveis: conservador, médio, agressivo.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">⚡</div>
+      <h4>Velocidade</h4>
+      <p>Acelera o vídeo e o áudio mantendo sincronia. De 1.15x a 2.0x.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">🔒</div>
+      <h4>Remover metadados</h4>
+      <p>Anonimiza os arquivos com nome UUID. Limpa rastros de origem.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">🪓</div>
+      <h4>Corte final</h4>
+      <p>Remove os últimos ms de cada clipe para eliminar cortes bruscos.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DOWNLOAD -->
+<div class="download-section" id="download">
+  <div class="download-inner">
+    <div class="section-label">Download</div>
+    <h2>Escolha sua plataforma.</h2>
+    <p class="section-sub">Versão Beta 1.2.2 · Exclusivo para o time Rare.</p>
+
+    <div class="download-cards">
+      <div class="dl-card">
+        <div class="dl-platform">Apple Mac</div>
+        <div class="dl-name">macOS</div>
+        <div class="dl-info">macOS 12 (Monterey) ou superior<br>Arquivo .dmg — arraste para Applications</div>
+        <a href="https://github.com/rareopgeral-rgb/rare-central-landing/releases/download/v1.2.2/RareCentral-Mac.dmg" class="dl-btn" target="_blank">
+          ↓ Baixar para Mac
+        </a>
+        <a href="manual-mac.html" class="dl-btn-secondary" target="_blank">
+          📄 Manual de instalação
+        </a>
+        <div style="margin-top:14px;background:rgba(0,230,118,0.06);border:1px solid rgba(0,230,118,0.15);border-radius:8px;padding:12px 14px;">
+          <div style="font-size:11px;font-weight:700;color:var(--green);letter-spacing:.5px;margin-bottom:6px;">⚡ APÓS INSTALAR — rode uma vez no Terminal:</div>
+          <code style="font-size:11px;color:#f0f5f0;font-family:'SF Mono','Menlo',monospace;word-break:break-all;">xattr -rd com.apple.quarantine /Applications/RareCentral.app</code>
+          <div style="font-size:11px;color:var(--muted);margin-top:6px;">Isso libera o app de vez. Sem isso, o macOS pede permissão toda vez.</div>
+        </div>
+      </div>
+      <div class="dl-card">
+        <div class="dl-platform">Microsoft Windows</div>
+        <div class="dl-name">Windows</div>
+        <div class="dl-info">Windows 10 ou superior (64-bit)<br>Arquivo .exe — abre direto, sem instalação</div>
+        <a href="https://github.com/rareopgeral-rgb/rare-central-landing/releases/download/v1.2.2/RareCentral-Windows.exe" class="dl-btn" target="_blank">
+          ↓ Baixar para Windows
+        </a>
+        <a href="manual-windows.html" class="dl-btn-secondary" target="_blank">
+          📄 Manual de instalação
+        </a>
+      </div>
+    </div>
+
+    <div class="dl-manuals">
+      <span style="font-size:12px;color:var(--muted);margin-right:4px;">Manuais em PDF:</span>
+      <a href="manual-mac.pdf" class="dl-manual-link" target="_blank">📄 Manual Mac</a>
+      <a href="manual-windows.pdf" class="dl-manual-link" target="_blank">📄 Manual Windows</a>
     </div>
   </div>
 </div>
 
-<!-- TABS -->
-<div class="tab-wrapper">
-  <nav class="tab-nav">
-    <button class="tab-btn active" data-tab="insights">📊 Insights</button>
-    <button class="tab-btn" data-tab="formatos">🎬 150 Formatos</button>
-    <button class="tab-btn" data-tab="hooks">🪝 100 Hooks</button>
-    <button class="tab-btn" data-tab="matrix">🏆 Matrix Tier</button>
-    <button class="tab-btn" data-tab="lives">📡 Live Shopping</button>
-    <button class="tab-btn" data-tab="ofertas">🎁 100 Ofertas</button>
-    <button class="tab-btn" data-tab="playbook">📋 Playbook</button>
-    <button class="tab-btn" data-tab="acao">⚡ Ação Agora</button>
-  </nav>
+<!-- BETA SECTION -->
+<div class="beta-section">
+  <div class="beta-inner">
+    <div class="section-label">Versão Beta — Acesso Restrito</div>
+    <h2>Exclusivo para o time Rare.</h2>
+    <p>
+      Essa é a versão beta interna do Rare Central. Você foi um dos primeiros a ter acesso.
+      Sua missão agora é usar, quebrar e nos contar o que não funcionou.
+    </p>
+
+    <div class="rules">
+      <ul>
+        <li>Não poste prints ou demos nos stories ou redes sociais</li>
+        <li>Não compartilhe o link de download fora da equipe</li>
+        <li>Use no dia a dia real de produção — não só para testar</li>
+        <li>Mande feedback direto no grupo: qualquer bug, trava ou resultado estranho</li>
+        <li>Cada relato vira uma melhoria na próxima versão</li>
+      </ul>
+    </div>
+
+    <a href="https://chat.whatsapp.com/FQPpcUtqlq23P79yybB81Y" class="whatsapp-btn" target="_blank">
+      💬 Entrar no grupo de feedback
+    </a>
+  </div>
 </div>
 
-<!-- TAB 1: INSIGHTS -->
-<div class="tab-content active" id="tab-insights">
-<div class="page">
+<!-- FOOTER -->
+<footer>
+  Rare Central © 2026 · Rare Company · Versão Beta 1.2.2 · Uso interno
+</footer>
 
-  <div class="sec">
-    <div class="sec-head">
-      <div class="sec-icon">📊</div>
-      <div><div class="sec-title">Relatório Executivo</div><div class="sec-sub">O que você precisa saber primeiro</div></div>
-    </div>
-    <div class="alert green"><span class="icon">✅</span><div><strong>O gargalo não é demanda — é capacidade.</strong> Demanda está comprovada: Netshoes +350% pós-convocação, SBF/Centauro projeta 850k camisas oficiais, 59% dos brasileiros querem comprar. O que limita a operação é: cap de 50 pedidos/dia/loja, frete de 7 dias contra a estreia em 13/06, e SPS ainda não calculado.</div></div>
-    <div class="alert yellow"><span class="icon">💡</span><div><strong>As duas maiores alavancas:</strong> (1) vídeo de ancoragem Nike R$449/R$749 vs sua camisa a R$34 — combustível direto e abundante; (2) lives diárias de 2h ancoradas no hype pré-jogo. Live converte até 30% vs ~3% do e-commerce tradicional.</div></div>
-    <div class="alert blue"><span class="icon">📦</span><div><strong>Para bater R$100k/45 dias:</strong> suba AOV via bundle (kit família/casal) para R$60–75, não via desconto. Cada ponto de desconto raso come os 27,4% de margem. Brinde de baixo custo/alto valor percebido (bandeira R$2 → percebido R$20) sobe conversão sem eroder margem.</div></div>
-  </div>
-
-  <div class="sec">
-    <div class="sec-head"><div class="sec-icon">🌍</div><div><div class="sec-title">Mercado Global de Vídeo Commerce</div><div class="sec-sub">O que repete entre China, SEA, EUA e Brasil</div></div></div>
-    <div class="g2">
-      <div class="card blue">
-        <div class="card-tag" style="color:var(--blue)">China — Taobao/Douyin</div>
-        <div class="card-num" style="color:var(--blue)">US$375bi</div>
-        <div class="card-text">GMV do Douyin Live Commerce. Viya vendeu RMB 353mi em um dia. Offerta relâmpago + escassez real anunciada é o núcleo do modelo.</div>
-      </div>
-      <div class="card green">
-        <div class="card-tag" style="color:var(--green)">Indonésia/SEA</div>
-        <div class="card-num" style="color:var(--green)">+426%</div>
-        <div class="card-text">Indofood + seleção nacional: bundles limitados (1.000/noite) geraram +426% nas vendas. Gamificação (roleta) +75% conversão (Es Teh Indonesia).</div>
-      </div>
-      <div class="card yellow">
-        <div class="card-tag" style="color:var(--yellow)">Brasil — TikTok Shop</div>
-        <div class="card-num" style="color:var(--yellow)">+228%</div>
-        <div class="card-text">Natura: live 12h na Black Friday → +228% conversão carrinho abandonado. Holistix: R$4k → R$3,2mi/mês com lives recorrentes. Riachuelo +675% GMV semanal.</div>
-      </div>
-      <div class="card">
-        <div class="card-tag" style="color:var(--orange)">Universais entre culturas</div>
-        <div class="card-num" style="color:var(--orange)">4/4</div>
-        <div class="card-text">Ancoragem original vs réplica · Textura/costura/escudo visíveis · Identidade nacional/tribal · Urgência de estoque — aparecem em TODOS os mercados.</div>
-      </div>
-    </div>
-    <div class="alert blue"><span class="icon">🔑</span><div><strong>67% das compras no TikTok Shop BR</strong> são motivadas por vídeo/live de criador, não por anúncio pago. <strong>65% já compraram por recomendação de criador.</strong> Conteúdo é a mídia.</div></div>
-  </div>
-
-  <div class="sec">
-    <div class="sec-head"><div class="sec-icon">📅</div><div><div class="sec-title">Histórico de Copa (2014–2026)</div><div class="sec-sub">O que viraliza, por que viraliza e o que mudou</div></div></div>
-    <div class="timeline">
-      <div class="tl-item">
-        <div class="tl-dot-wrap"><div class="tl-dot" style="background:var(--muted)"></div><div class="tl-line"></div></div>
-        <div class="tl-body"><div class="tl-date">2014 — TV/Facebook</div><div class="tl-title">Copa em Casa, Segunda Tela</div><div class="tl-text">Conteúdo era de compartilhamento lento. Viralização por emoticons/memes no Facebook. Maior driver: patriotismo bruto + humor pós-jogo. Estoque encalhou R$85mi no mercado.</div></div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-dot-wrap"><div class="tl-dot" style="background:var(--muted)"></div><div class="tl-line"></div></div>
-        <div class="tl-body"><div class="tl-date">2018 — Instagram/Stories</div><div class="tl-title">Formato vertical, 15 segundos</div><div class="tl-text">Stories mudou tudo: conteúdo efêmero + urgência. Nostalgia retrô começou a ganhar força. Influencers de futebol decolaram. Queda de ~25% após eliminação.</div></div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-dot-wrap"><div class="tl-dot" style="background:var(--blue)"></div><div class="tl-line"></div></div>
-        <div class="tl-body"><div class="tl-date">2022 — Reels/TikTok Orgânico</div><div class="tl-title">Discovery Commerce nasce</div><div class="tl-text">+412% nas buscas "camisa do Brasil" no dia seguinte à vitória na estreia. Reels/TikTok alimentaram demanda impulsiva. Queda de ~70% após eliminação nas oitavas.</div></div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-dot-wrap"><div class="tl-dot" style="background:var(--green)"></div></div>
-        <div class="tl-body"><div class="tl-date">2026 — TikTok Shop + Live Commerce</div><div class="tl-title" style="color:var(--green)">Checkout nativo + Polêmica Jordan</div><div class="tl-text">Novidade 2026: compra dentro do app, sem fricção. + parceria Jordan (camisa azul "Joga Sinistro", R$749 a versão jogador) gerou revolta — combustível perfeito para o gancho de preço. GMV TikTok Shop BR cresceu 102× em 12 meses.</div></div>
-      </div>
-    </div>
-    <div class="g3" style="margin-top:16px">
-      <div class="card green"><div class="card-tag" style="color:var(--green)">Padrões que voltam toda Copa</div><div style="font-size:12px;color:#88c8a0;line-height:1.9">Patriotismo + nostalgia<br>Kit família/grupo<br>Superstição (camisa nova)<br>Humor pós-jogo<br>Rivalidade Brasil×Argentina<br>Hype pré-estreia</div></div>
-      <div class="card yellow"><div class="card-tag" style="color:var(--yellow)">Novo em 2026</div><div style="font-size:12px;color:#c8a858;line-height:1.9">Polêmica preço Nike R$749<br>Parceria Jordan (azul)<br>TikTok Shop checkout nativo<br>GMV de lives 161× maior<br>Live shopping como padrão<br>Afiliados massivos (46×)</div></div>
-      <div class="card red"><div class="card-tag" style="color:var(--red)">Risco histórico</div><div style="font-size:12px;color:#e88080;line-height:1.9">Colapso 25–70% na eliminação<br>Primeiro 48h = queda abrupta<br>Estoque encalha rápido<br>Frete de 7 dias mata impulso<br>Cap de pedidos limita escala<br>IPR pode suspender conta</div></div>
-    </div>
-  </div>
-
-  <div class="sec">
-    <div class="sec-head"><div class="sec-icon">🧠</div><div><div class="sec-title">Psicologia do Desejo</div><div class="sec-sub">O que realmente vende camisa da seleção</div></div></div>
-    <table class="stat-table">
-      <thead><tr><th>Motivador</th><th>Em Vídeo</th><th>Em Live</th><th>Combina com</th><th>Força</th></tr></thead>
-      <tbody>
-        <tr><td class="hl">Patriotismo</td><td>POV vestindo, verde-amarelo</td><td>"Vamos vestir o Brasil juntos"</td><td>Nostalgia</td><td class="g">★★★★★</td></tr>
-        <tr><td class="hl">Pertencimento</td><td>Família/grupo de camisa</td><td>Call-out por nome</td><td>Patriotismo</td><td class="g">★★★★★</td></tr>
-        <tr><td class="hl">FOMO de Evento</td><td>"Sem camisa no churrasco"</td><td>"Última chance antes do jogo"</td><td>Escassez</td><td class="g">★★★★★</td></tr>
-        <tr><td class="hl">Ancoragem de Preço</td><td>Nike R$749 vs R$34</td><td>"Ninguém vai notar"</td><td>Status</td><td class="g">★★★★★</td></tr>
-        <tr><td class="hl">Nostalgia</td><td>Retrô 1970/2002</td><td>"Copa da sua infância"</td><td>Coleção</td><td class="y">★★★★☆</td></tr>
-        <tr><td class="hl">Hype</td><td>Countdown estreia</td><td>"Faltam X dias"</td><td>FOMO</td><td class="y">★★★★☆</td></tr>
-        <tr><td class="hl">Identidade Tribal</td><td>"Brasileiro de verdade"</td><td>"Quem é brasileiro comenta BRASIL"</td><td>Rivalidade</td><td class="y">★★★★☆</td></tr>
-        <tr><td class="hl">Superstição</td><td>"Toda Copa eu compro nova"</td><td>"Ritual da torcida"</td><td>Emoção</td><td class="b">★★★☆☆</td></tr>
-        <tr><td class="hl">Lifestyle</td><td>Usar no dia a dia</td><td>"Não é só pra jogo"</td><td>Estética</td><td class="b">★★★☆☆</td></tr>
-      </tbody>
-    </table>
-    <div class="alert green"><span class="icon">🏆</span><div><strong>Combo mais forte:</strong> Patriotismo + Ancoragem de preço (vs Nike R$449/R$749) + FOMO de evento. Esses três juntos num criativo de 15–20s são o pico de conversão para camisa da seleção no TikTok Shop BR.</div></div>
-  </div>
-
-  <div class="sec">
-    <div class="sec-head"><div class="sec-icon">⚠️</div><div><div class="sec-title">Janela Temporal Crítica</div><div class="sec-sub">Quando vender, quando parar, o que monitorar</div></div></div>
-    <div class="g3">
-      <div class="card green"><div class="card-tag" style="color:var(--green)">✅ AGORA — 10/06 a 13/06</div><div style="font-size:12px;color:#88c898;line-height:1.8">Pico máximo de disposição a pagar. Lives diárias. Suba preço. Despacho imediato. 44% antecipam compra. Maior conversão de todo o ciclo.</div></div>
-      <div class="card yellow"><div class="card-tag" style="color:var(--yellow)">⚡ GRUPOS — 13/06 a 24/06</div><div style="font-size:12px;color:#c8a858;line-height:1.8">Após vitória na estreia: segundo pico. Sustentar preço. "Pede até X pra chegar antes do próximo jogo." Não zere estoque aqui.</div></div>
-      <div class="card red"><div class="card-tag" style="color:var(--red)">🚨 ELIMINAÇÃO — gatilho</div><div style="font-size:12px;color:#e88080;line-height:1.8">Queda 25–70% nas 48h após eliminação. Plano de liquidação pronto: -20% em 24h, -30% em 48h. Pivote para retrô ou outras seleções.</div></div>
-    </div>
-    <div class="alert yellow"><span class="icon">📦</span><div><strong>Frete de 7 dias é o maior risco operacional.</strong> Pedido feito hoje (10/06) chega ~17/06, depois da estreia. Comunique honestamente: "Pede hoje pra chegar antes do 2º jogo (19/06)." Despacho diário sem acumular reduz prazo percebido em 1–2 dias.</div></div>
-  </div>
-
-</div>
-</div>
-
-<!-- TAB 2: FORMATOS -->
-<div class="tab-content" id="tab-formatos">
-<div class="page">
-
-  <div class="sec">
-    <div class="sec-head"><div class="sec-icon">🎬</div><div><div class="sec-title">Taxonomia de Formatos</div><div class="sec-sub">20 categorias + banco de 150 formatos com roteiros</div></div></div>
-    <div class="g4">
-      <div class="card"><div class="card-tag">View Driver</div><div style="font-size:12px;color:var(--muted)">Scroll stop, pattern interrupt. Viral alta, conversão baixa.</div></div>
-      <div class="card green"><div class="card-tag" style="color:var(--green)">Sale Driver</div><div style="font-size:12px;color:#88c898">Preço explícito + carrinho. Viral média, conversão alta.</div></div>
-      <div class="card green"><div class="card-tag" style="color:var(--green)">Hybrid ⭐</div><div style="font-size:12px;color:#88c898">"Nike R$449…" Viral + conversão ALTA. Ouro puro.</div></div>
-      <div class="card"><div class="card-tag">Authority</div><div style="font-size:12px;color:var(--muted)">Fornecedor/especialista. Confiança alta.</div></div>
-      <div class="card"><div class="card-tag">Community</div><div style="font-size:12px;color:var(--muted)">Marca o amigo. Pertencimento.</div></div>
-      <div class="card yellow"><div class="card-tag" style="color:var(--yellow)">FOMO</div><div style="font-size:12px;color:#c8a858">Estoque/prazo. Conversão alta.</div></div>
-      <div class="card"><div class="card-tag">Nostalgia</div><div style="font-size:12px;color:var(--muted)">Retrô. Viral alta.</div></div>
-      <div class="card blue"><div class="card-tag" style="color:var(--blue)">Patriótico</div><div style="font-size:12px;color:#80b0d8">Verde-amarelo. Orgulho.</div></div>
-      <div class="card"><div class="card-tag">Meme</div><div style="font-size:12px;color:var(--muted)">Áudio viral. Curto prazo.</div></div>
-      <div class="card green"><div class="card-tag" style="color:var(--green)">Comparison ⭐</div><div style="font-size:12px;color:#88c898">Original vs réplica. Viral+venda alta.</div></div>
-      <div class="card"><div class="card-tag">Unboxing</div><div style="font-size:12px;color:var(--muted)">Recebidos. Antecipação.</div></div>
-      <div class="card"><div class="card-tag">Reaction</div><div style="font-size:12px;color:var(--muted)">Reagir ao preço Nike. Viral alta.</div></div>
-      <div class="card blue"><div class="card-tag" style="color:var(--blue)">POV</div><div style="font-size:12px;color:#80b0d8">1ª pessoa. Identificação.</div></div>
-      <div class="card"><div class="card-tag">"Se você é BR…"</div><div style="font-size:12px;color:var(--muted)">Tribal. Viral alta.</div></div>
-      <div class="card"><div class="card-tag">Collection</div><div style="font-size:12px;color:var(--muted)">Todas as cores. AOV alto.</div></div>
-      <div class="card"><div class="card-tag">Gift</div><div style="font-size:12px;color:var(--muted)">Presente. Afeto + AOV.</div></div>
-      <div class="card yellow"><div class="card-tag" style="color:var(--yellow)">Urgency</div><div style="font-size:12px;color:#c8a858">Última remessa. Pressão.</div></div>
-      <div class="card green"><div class="card-tag" style="color:var(--green)">Live Shopping ⭐</div><div style="font-size:12px;color:#88c898">Conversão 10×. Veja aba Lives.</div></div>
-      <div class="card"><div class="card-tag">Storytelling</div><div style="font-size:12px;color:var(--muted)">Narrativa. Emoção média.</div></div>
-      <div class="card"><div class="card-tag">Emotional</div><div style="font-size:12px;color:var(--muted)">Avô/filho. Viral alta.</div></div>
-    </div>
-  </div>
-
-  <div class="sec">
-    <div class="sec-head"><div class="sec-icon">⭐</div><div><div class="sec-title">Formatos Tier S — Roteiros Completos</div><div class="sec-sub">Os 15 que você deve rodar agora, com script em PT-BR casual</div></div></div>
-
-    <!-- S1 -->
-    <div class="fmt-card">
-      <div class="fmt-header">
-        <div class="tier tier-S">S</div>
-        <div class="fmt-name">S1 — Nike R$449 vs Minha R$34,90</div>
-        <div class="badge badge-green">Hybrid</div>
-        <div class="badge badge-green">Viral ★★★</div>
-        <div class="badge badge-green">Venda ★★★</div>
-      </div>
-      <div class="fmt-badges">
-        <span class="badge badge-gray">15–18s</span>
-        <span class="badge badge-blue">Orgânico + Shop</span>
-        <span class="badge badge-green">IA ✓ (print + mão)</span>
-        <span class="badge badge-yellow">10/dia escalável</span>
-      </div>
-      <div class="fmt-hook"><strong>Hook:</strong> "Setecentos e cinquenta reais numa camisa?! Olha o que eu tenho aqui…"</div>
-      <div class="fmt-scenes">
-        <div class="scene"><div class="scene-time">0–2s</div><div class="scene-text"><strong>Close no print do site Nike</strong> — R$749,99 em fonte grande. Zoom brusco. Áudio: choque/surpresa.</div></div>
-        <div class="scene"><div class="scene-time">2–8s</div><div class="scene-text"><strong>Segura a camisa na câmera</strong> — "Olha essa aqui ó. Mesma cor, mesmo escudo, mesma pegada."</div></div>
-        <div class="scene"><div class="scene-time">8–13s</div><div class="scene-text"><strong>Vira a costura, mostra a textura</strong> — "Trinta e quatro e noventa. Ninguém, NINGUÉM vai notar a diferença no churrasco."</div></div>
-        <div class="scene"><div class="scene-time">13–15s</div><div class="scene-text"><strong>Tela com carrinho</strong> — "Carrinho laranja aqui embaixo. Pede já que frete leva uns dias."</div></div>
-        <div class="scene"><div class="scene-time">15–18s</div><div class="scene-text"><strong>Overlay de preço</strong> — R$34,90 em destaque. Call to action visual.</div></div>
-      </div>
-      <div class="fmt-script">
-        <div class="fmt-script-label">Roteiro completo</div>
-        <div class="fmt-script-text">[0s] *segura o celular mostrando site da Nike*
-"Setecentos e cinquenta reais. Sete. Cinco. Zero."
-
-[3s] *pega a camisa verde-amarela*
-"Olha aqui, ó. Verde-amarela, escudo bordado,
-tecido arejado. Parece diferente?"
-
-[8s] *vira pro lado, mostra a costura*
-"Trinta e quatro reais e noventa centavos.
-Compra 2 sai R$54,90."
-
-[12s] *olha pra câmera*
-"Ninguém vai notar que você não pagou R$750
-no churrasco de sábado."
-
-[14s] *aponta pra baixo*
-"Toca no carrinho aí embaixo. Pede hoje
-que o frete leva uns 7 dias."</div>
-      </div>
-    </div>
-
-    <!-- S2 -->
-    <div class="fmt-card">
-      <div class="fmt-header"><div class="tier tier-S">S</div><div class="fmt-name">S2 — Acha o Erro (Original vs Minha)</div><div class="badge badge-green">Comparison</div><div class="badge badge-green">Viral ★★★</div></div>
-      <div class="fmt-badges"><span class="badge badge-gray">12–15s</span><span class="badge badge-blue">Orgânico</span><span class="badge badge-yellow">8/dia</span></div>
-      <div class="fmt-hook"><strong>Hook:</strong> "Uma dessas é a Nike de R$449. Você consegue achar qual?"</div>
-      <div class="fmt-scenes">
-        <div class="scene"><div class="scene-time">0–2s</div><div class="scene-text"><strong>Duas camisas lado a lado</strong> — pergunta aparece na tela.</div></div>
-        <div class="scene"><div class="scene-time">2–8s</div><div class="scene-text"><strong>Mostra detalhe: escudo, costura, tecido</strong> — câmera passeia sem revelar.</div></div>
-        <div class="scene"><div class="scene-time">8–12s</div><div class="scene-text"><strong>Reveal</strong> — "A da esquerda é a minha, de R$34,90. Acertou?"</div></div>
-        <div class="scene"><div class="scene-time">12–15s</div><div class="scene-text"><strong>CTA</strong> — "Carrinho embaixo."</div></div>
-      </div>
-    </div>
-
-    <!-- S3 -->
-    <div class="fmt-card">
-      <div class="fmt-header"><div class="tier tier-S">S</div><div class="fmt-name">S3 — Recebidos da Copa</div><div class="badge badge-blue">Unboxing</div><div class="badge badge-green">Venda ★★★</div></div>
-      <div class="fmt-badges"><span class="badge badge-gray">15–20s</span><span class="badge badge-blue">Shop</span><span class="badge badge-green">IA ✓ (narração)</span></div>
-      <div class="fmt-hook"><strong>Hook:</strong> "Olha o que chegou pra Copa…" [caixa sendo aberta, mãos em close]</div>
-      <div class="fmt-scenes">
-        <div class="scene"><div class="scene-time">0–3s</div><div class="scene-text"><strong>Abertura da sacola/caixa</strong> — ASMR de papel/caixa. Câmera de cima.</div></div>
-        <div class="scene"><div class="scene-time">3–8s</div><div class="scene-text"><strong>Camisa sendo dobrada, fechamento bordado em destaque.</strong> Cor viva.</div></div>
-        <div class="scene"><div class="scene-time">8–15s</div><div class="scene-text"><strong>Veste ou segura no corpo</strong> — "Chegou em [X] dias. Perfeita."</div></div>
-        <div class="scene"><div class="scene-time">15–18s</div><div class="scene-text"><strong>Mostra preço + carrinho</strong> — "R$34,90. Pede a tua antes da estreia."</div></div>
-      </div>
-    </div>
-
-    <!-- S4 -->
-    <div class="fmt-card">
-      <div class="fmt-header"><div class="tier tier-S">S</div><div class="fmt-name">S4 — "Se Você É Brasileiro…"</div><div class="badge badge-purple">Tribal</div><div class="badge badge-green">Viral ★★★</div></div>
-      <div class="fmt-badges"><span class="badge badge-gray">8–12s</span><span class="badge badge-blue">Orgânico</span><span class="badge badge-green">10/dia</span></div>
-      <div class="fmt-hook"><strong>Hook:</strong> "Se você é brasileiro e ainda não tem camisa da seleção, esse vídeo é pra você."</div>
-      <div class="fmt-script">
-        <div class="fmt-script-label">Roteiro</div>
-        <div class="fmt-script-text">[0s] "Se você é brasileiro e ainda tá sem camisa da seleção—"
-[2s] *segura a camisa em cada mão, uma amarela, uma azul*
-"—você tem um problema."
-[4s] "Faltam 3 dias pro Brasil e você vai torcer de regata?"
-[7s] "A minha é R$34,90. Duas por R$54,90."
-[9s] "Toca no carrinho. Vai."</div>
-      </div>
-    </div>
-
-    <!-- S5 -->
-    <div class="fmt-card">
-      <div class="fmt-header"><div class="tier tier-S">S</div><div class="fmt-name">S5 — Família Toda de Amarelo (Kit Família)</div><div class="badge badge-green">Emotional</div><div class="badge badge-green">AOV ★★★</div></div>
-      <div class="fmt-badges"><span class="badge badge-gray">15–18s</span><span class="badge badge-blue">Shop</span><span class="badge badge-yellow">AOV R$74–90</span></div>
-      <div class="fmt-hook"><strong>Hook:</strong> "Vai deixar a família torcer de qualquer roupa no dia do jogo?"</div>
-      <div class="fmt-script">
-        <div class="fmt-script-label">Roteiro</div>
-        <div class="fmt-script-text">[0s] *3 camisas na cama, tamanhos diferentes*
-"Vai deixar a família torcer de qualquer roupa?"
-
-[3s] *separa uma de cada tamanho*
-"Você, a patroa e o moleque.
-Todo mundo de amarelo dia 13."
-
-[8s] *faz conta na mão*
-"O kit família sai R$84,90.
-Menos que UMA camisa oficial."
-
-[13s] *aponta pra baixo*
-"Escolhe os tamanhos no carrinho.
-Pede hoje pra chegar antes do jogo."</div>
-      </div>
-    </div>
-
-    <!-- S6 -->
-    <div class="fmt-card">
-      <div class="fmt-header"><div class="tier tier-S">S</div><div class="fmt-name">S6 — FOMO de Estoque ("Já Despachei 400")</div><div class="badge badge-yellow">FOMO</div><div class="badge badge-green">Venda ★★★</div></div>
-      <div class="fmt-badges"><span class="badge badge-gray">12–15s</span><span class="badge badge-blue">Orgânico + Shop</span></div>
-      <div class="fmt-script">
-        <div class="fmt-script-label">Roteiro</div>
-        <div class="fmt-script-text">[0s] *mostra pilha de pacotes prontos pra Correios*
-"Isso aqui é só hoje."
-
-[3s] "Já despachei mais de 400 camisas essa semana.
-Tá voando."
-
-[7s] *pega uma camisa amarela, mostra etiqueta G*
-"Restam pouca coisa no G amarelo.
-Quando zerar, não tem mais até a Copa."
-
-[11s] "Garante a tua agora.
-Carrinho aqui embaixo."</div>
-      </div>
-    </div>
-
-    <!-- S7 -->
-    <div class="fmt-card">
-      <div class="fmt-header"><div class="tier tier-S">S</div><div class="fmt-name">S7 — "Testei a de R$30 do TikTok Shop"</div><div class="badge badge-blue">Authority</div><div class="badge badge-green">Venda ★★★</div></div>
-      <div class="fmt-badges"><span class="badge badge-gray">20–30s</span><span class="badge badge-blue">Orgânico</span></div>
-      <div class="fmt-hook"><strong>Hook:</strong> "Testei a camisa de R$30 do TikTok Shop. Olha o que eu descobri…"</div>
-      <div class="fmt-scenes">
-        <div class="scene"><div class="scene-time">0–3s</div><div class="scene-text"><strong>Unboxing rápido.</strong> Hook de curiosidade.</div></div>
-        <div class="scene"><div class="scene-time">3–10s</div><div class="scene-text"><strong>Testa textura, costura, escudo</strong> — "Tecido macio, costura firme, escudo bordado."</div></div>
-        <div class="scene"><div class="scene-time">10–18s</div><div class="scene-text"><strong>Veste a camisa</strong> — "No corpo fica assim. Tamanho certo."</div></div>
-        <div class="scene"><div class="scene-time">18–25s</div><div class="scene-text"><strong>Veredito honesto</strong> — "Vale MUITO mais que o preço. Comprei 2."</div></div>
-        <div class="scene"><div class="scene-time">25–28s</div><div class="scene-text"><strong>CTA</strong> — Link no carrinho.</div></div>
-      </div>
-    </div>
-
-    <!-- S8 -->
-    <div class="fmt-card">
-      <div class="fmt-header"><div class="tier tier-S">S</div><div class="fmt-name">S8 — POV: Chegou Sábado e Você Sem Camisa</div><div class="badge badge-blue">POV</div><div class="badge badge-green">Viral ★★★</div></div>
-      <div class="fmt-badges"><span class="badge badge-gray">10–15s</span><span class="badge badge-blue">Orgânico</span><span class="badge badge-green">8/dia</span></div>
-      <div class="fmt-script">
-        <div class="fmt-script-label">Roteiro</div>
-        <div class="fmt-script-text">[0s] Texto na tela: "POV: Chegou sábado, todo mundo de camisa"
-Áudio: hino do Brasil tocando
-
-[3s] *câmera mostra você de regata, olha pros lados*
-"Não acredito que eu deixei pra última hora."
-
-[6s] *mostra a camisa na tela*
-"Mas era só R$34,90 no TikTok Shop."
-"Podia ter pedido segunda-feira."
-
-[11s] *texto: "Pede agora. Chega antes do próximo jogo."*</div>
-      </div>
-    </div>
-
-    <!-- S9 -->
-    <div class="fmt-card">
-      <div class="fmt-header"><div class="tier tier-S">S</div><div class="fmt-name">S9 — Reagindo ao Preço Nike (Green Screen)</div><div class="badge badge-blue">Reaction</div><div class="badge badge-green">Viral ★★★</div></div>
-      <div class="fmt-badges"><span class="badge badge-gray">12–18s</span><span class="badge badge-blue">Orgânico</span><span class="badge badge-green">IA ✓</span></div>
-      <div class="fmt-script">
-        <div class="fmt-script-label">Roteiro</div>
-        <div class="fmt-script-text">[0s] *green screen: site da Nike, camisa R$749,99*
-Expressão de choque exagerado.
-
-[3s] "Olha o preço dessa camisa."
-"Setecentos… e quarenta e nove reais."
-
-[7s] *tira o green screen, mostra a camisa na mão*
-"A minha ficou R$34,90."
-"MESMA COR. Mesmo escudo."
-
-[12s] "Vai me dizer que vale 20× mais?"
-"Carrinho aqui embaixo."</div>
-      </div>
-    </div>
-
-    <!-- S10 -->
-    <div class="fmt-card">
-      <div class="fmt-header"><div class="tier tier-S">S</div><div class="fmt-name">S10 — Última Remessa Antes da Estreia</div><div class="badge badge-yellow">Urgency</div><div class="badge badge-green">Venda ★★★</div></div>
-      <div class="fmt-badges"><span class="badge badge-gray">12–15s</span><span class="badge badge-blue">Shop</span></div>
-      <div class="fmt-script">
-        <div class="fmt-script-label">Roteiro</div>
-        <div class="fmt-script-text">[0s] *texto animado: "ÚLTIMA REMESSA ANTES DA ESTREIA"*
-Áudio urgente.
-
-[3s] "Essa aqui é a última remessa que comprei
-antes do Brasil jogar."
-
-[6s] "Quando acabar, não tem mais até a Copa."
-*conta as camisas na pilha*
-
-[10s] "Pede hoje que você recebe antes do 2º jogo."
-[12s] Carrinho no final.</div>
-      </div>
-    </div>
-
-    <!-- S11-S15 condensed -->
-    <div class="fmt-card">
-      <div class="fmt-header"><div class="tier tier-S">S</div><div class="fmt-name">S11–S15 — Outros Tier S</div></div>
-      <div class="acc-item"><button class="acc-trigger" onclick="toggleAcc(this)"><span>S11 — Presente Pro Pai</span><span class="acc-arrow">▼</span></button><div class="acc-body"><div class="fmt-script-text">Hook: "O presente perfeito pro pai que vai torcer domingo."
-0–3s: embala a camisa num papel de presente simples.
-3–10s: "É R$34,90. Pedi no TikTok Shop e chegou em 7 dias."
-10–15s: "O melhor presente que você vai dar sem precisar gastar R$450."
-15s: CTA + carrinho.</div></div></div>
-      <div class="acc-item"><button class="acc-trigger" onclick="toggleAcc(this)"><span>S12 — Costura ASMR</span><span class="acc-arrow">▼</span></button><div class="acc-body"><div class="fmt-script-text">Hook: [sem fala — zoom extremo na costura, ASMR de tecido]
-0–5s: passeia pela costura, escudo, gola.
-5–10s: texto na tela "Qualidade que você não esperava por R$34,90."
-10–12s: CTA.</div></div></div>
-      <div class="acc-item"><button class="acc-trigger" onclick="toggleAcc(this)"><span>S13 — Provador 3 Modelos (↑AOV)</span><span class="acc-arrow">▼</span></button><div class="acc-body"><div class="fmt-script-text">Hook: "Veste 3, fica com qual?"
-0–8s: troca de camisa rápido (cut entre cada modelo: amarela, azul, retrô).
-8–15s: "As 3 são R$29,90 cada. Leva a família toda."
-15s: CTA bundle.</div></div></div>
-      <div class="acc-item"><button class="acc-trigger" onclick="toggleAcc(this)"><span>S14 — Faltam X Dias (Countdown)</span><span class="acc-arrow">▼</span></button><div class="acc-body"><div class="fmt-script-text">Hook: texto animado "Faltam 3 dias pra estreia do Brasil"
-0–3s: countdown visual.
-3–10s: "Você ainda tem tempo pra garantir a tua."
-10–15s: "Pede hoje. Frete de 7 dias. Chega antes do 2º jogo."
-CTA.</div></div></div>
-      <div class="acc-item"><button class="acc-trigger" onclick="toggleAcc(this)"><span>S15 — Live Diária (veja aba Lives)</span><span class="acc-arrow">▼</span></button><div class="acc-body"><div class="fmt-script-text">Ver seção completa de Live Shopping. Lives de 2h, prime time 19–22h.
-Ciclo de venda de 15–20 min. Conversão 10× o e-commerce normal.</div></div></div>
-    </div>
-  </div>
-
-  <div class="sec">
-    <div class="sec-head"><div class="sec-icon">🎭</div><div><div class="sec-title">Formatos Tier A — 22 Complementares</div><div class="sec-sub">Rodar como complemento aos Tier S</div></div></div>
-    <div class="hooks-grid">
-      <div class="hook"><span class="hook-cat">Tier A</span>Retrô 2002 vs atual</div>
-      <div class="hook"><span class="hook-cat">Tier A</span>Gerações (avô/pai/filho)</div>
-      <div class="hook"><span class="hook-cat">Tier A</span>Tecido no ventilador</div>
-      <div class="hook"><span class="hook-cat">Tier A</span>Lavei 5x — resultados</div>
-      <div class="hook"><span class="hook-cat">Tier A</span>Amarela vs Azul Jordan</div>
-      <div class="hook"><span class="hook-cat">Tier A</span>Fornecedor do Brás</div>
-      <div class="hook"><span class="hook-cat">Tier A</span>Kit casal combinando</div>
-      <div class="hook"><span class="hook-cat">Tier A</span>Meme: cartão chorando</div>
-      <div class="hook"><span class="hook-cat">Tier A</span>Reação do pai ao preço</div>
-      <div class="hook"><span class="hook-cat">Tier A</span>Escudo termo vs bordado</div>
-      <div class="hook"><span class="hook-cat">Tier A</span>Esgotou na Centauro</div>
-      <div class="hook"><span class="hook-cat">Tier A</span>Brasileiro de verdade</div>
-      <div class="hook"><span class="hook-cat">Tier A</span>Provador feminino</div>
-      <div class="hook"><span class="hook-cat">Tier A</span>Provador infantil</div>
-      <div class="hook"><span class="hook-cat">Tier A</span>Todas as cores (collection)</div>
-      <div class="hook"><span class="hook-cat">Tier A</span>Superstição: camisa nova</div>
-      <div class="hook"><span class="hook-cat">Tier A</span>Luz natural vs artificial</div>
-      <div class="hook"><span class="hook-cat">Tier A</span>Kit torcida completo</div>
-      <div class="hook"><span class="hook-cat">Tier A</span>Comprei pra família inteira</div>
-      <div class="hook"><span class="hook-cat">Tier A</span>Criança surpresa com camisa</div>
-      <div class="hook"><span class="hook-cat">Tier A</span>Churrasco de jogo — vlog</div>
-      <div class="hook"><span class="hook-cat">Tier A</span>Duet com creator de futebol</div>
-    </div>
-  </div>
-
-  <div class="sec">
-    <div class="sec-head"><div class="sec-icon">🤖</div><div><div class="sec-title">IA vs UGC Humano</div><div class="sec-sub">Quando usar cada um</div></div></div>
-    <table class="stat-table">
-      <thead><tr><th>Tipo</th><th>Ferramentas</th><th>Custo</th><th>Escala</th><th>Velocidade</th><th>Conversão</th><th>Melhor para</th></tr></thead>
-      <tbody>
-        <tr><td class="hl">Full AI</td><td>HeyGen, Arcads, Creatify, RunwayML, Kling, ElevenLabs</td><td class="g">R$0–60/vídeo</td><td class="g">10/10</td><td class="g">2–10 min</td><td class="y">Média</td><td>Volume de hook-testing, topo de funil</td></tr>
-        <tr><td class="hl">Hybrid ⭐</td><td>Mão humana + CapCut + legenda IA</td><td class="g">R$0–20</td><td class="g">8/10</td><td class="g">10–30 min</td><td class="g">Alta</td><td>Comparison, unboxing, texture — <strong>melhor ROI para o TH</strong></td></tr>
-        <tr><td class="hl">Pure UGC</td><td>Criador filmando celular</td><td class="y">R$0–150</td><td class="y">5/10</td><td>20–60 min</td><td class="g">Muito alta</td><td>Testimonial, POV, autoridade — confiança máxima</td></tr>
-      </tbody>
-    </table>
-    <div class="alert blue"><span class="icon">🎯</span><div><strong>Regra de ouro:</strong> avatar IA serve para volume e teste de hook (kill em 24h o que não retém 60% nos 3s). <strong>Mão humana + voz real vence em testimonial.</strong> IA não carrega confiança em "eu uso isso" — para isso, humano ganha sempre.</div></div>
-  </div>
-
-</div>
-</div>
-
-<!-- TAB 3: HOOKS -->
-<div class="tab-content" id="tab-hooks">
-<div class="page">
-
-  <div class="sec">
-    <div class="sec-head"><div class="sec-icon">🪝</div><div><div class="sec-title">100+ Hooks para Camisa do Brasil</div><div class="sec-sub">Organizados por gatilho psicológico com templates reutilizáveis</div></div></div>
-    <div class="alert green"><span class="icon">💡</span><div><strong>Como usar:</strong> cada hook é um template. Preencha os [colchetes] com seus dados reais (preço, estoque, prazo). Combine 2 gatilhos num mesmo hook para maximizar retenção.</div></div>
-  </div>
-
-  <div class="sec">
-    <div class="sec-head"><div class="sec-icon">😲</div><div><div class="sec-title">Shock & Comparison</div><div class="sec-sub">Os hooks de maior CTR — âncora de preço é o combustível</div></div></div>
-    <div class="hooks-grid">
-      <div class="hook"><span class="hook-cat">Shock</span>"R$749 numa camisa?! Olha o absurdo"</div>
-      <div class="hook"><span class="hook-cat">Shock</span>"A Nike enlouqueceu com esse preço"</div>
-      <div class="hook"><span class="hook-cat">Shock</span>"Paguei menos de R$35 e ninguém percebeu"</div>
-      <div class="hook"><span class="hook-cat">Shock</span>"Essa camisa custa o preço de um lanche"</div>
-      <div class="hook"><span class="hook-cat">Shock</span>"Olha a diferença de preço que vão te esconder"</div>
-      <div class="hook"><span class="hook-cat">Comparison</span>"Original vs a minha: acha o erro"</div>
-      <div class="hook"><span class="hook-cat">Comparison</span>"Nike R$449 / a minha R$34,90 / cê decide"</div>
-      <div class="hook"><span class="hook-cat">Comparison</span>"Costura, escudo, tecido — comparei tudo"</div>
-      <div class="hook"><span class="hook-cat">Comparison</span>"Tailandesa 1.1 vs comum: qual vale"</div>
-      <div class="hook"><span class="hook-cat">Comparison</span>"Botei lado a lado e me surpreendi"</div>
-      <div class="hook"><span class="hook-cat">Comparison</span>"Mesma camisa, 1/10 do preço"</div>
-      <div class="hook"><span class="hook-cat">Comparison</span>"O que R$749 compra vs R$34"</div>
-    </div>
-    <div class="card" style="margin-top:12px">
-      <div class="label">Template universal — Comparison</div>
-      <p class="prose">"<strong>[Marca famosa]</strong> cobra <strong>[preço alto]</strong>. A minha é <strong>[seu preço]</strong> e <strong>[benefício emocional]</strong>."</p>
-      <p class="prose">→ Aplica: "A Nike cobra R$449. A minha é R$34,90 e ninguém vai notar a diferença no churrasco."</p>
-    </div>
-  </div>
-
-  <div class="sec">
-    <div class="sec-head"><div class="sec-icon">🇧🇷</div><div><div class="sec-title">Patriotismo & Tribal Identity</div></div></div>
-    <div class="hooks-grid">
-      <div class="hook"><span class="hook-cat">Patriotismo</span>"Se você é brasileiro e não tem camisa da seleção, esse vídeo é pra você"</div>
-      <div class="hook"><span class="hook-cat">Patriotismo</span>"É verde, é amarelo, é Brasil"</div>
-      <div class="hook"><span class="hook-cat">Patriotismo</span>"Hexa vem, e você vai torcer pelado?"</div>
-      <div class="hook"><span class="hook-cat">Patriotismo</span>"A camisa que todo brasileiro precisa ter dia 13"</div>
-      <div class="hook"><span class="hook-cat">Patriotismo</span>"Vestir o manto não tem preço (mas essa tem)"</div>
-      <div class="hook"><span class="hook-cat">Tribal</span>"Brasileiro de verdade torce de camisa"</div>
-      <div class="hook"><span class="hook-cat">Tribal</span>"Marca o amigo que ainda tá sem a dele"</div>
-      <div class="hook"><span class="hook-cat">Tribal</span>"Família toda de amarelo no dia do jogo"</div>
-      <div class="hook"><span class="hook-cat">Tribal</span>"Você não vai ser o único sem camisa no churrasco"</div>
-      <div class="hook"><span class="hook-cat">Tribal</span>"POV: o grupo todo de camisa e você de regata branca"</div>
-      <div class="hook"><span class="hook-cat">Tribal</span>"Torcedor raiz não fica sem o manto"</div>
-      <div class="hook"><span class="hook-cat">Tribal</span>"Da arquibancada pro sofá, mesma paixão"</div>
-    </div>
-    <div class="card" style="margin-top:12px">
-      <div class="label">Template universal — Tribal</div>
-      <p class="prose">"Se você <strong>[identidade]</strong>, <strong>[problema/vazio]</strong>. Eu resolvi por <strong>[preço]</strong>."</p>
-    </div>
-  </div>
-
-  <div class="sec">
-    <div class="sec-head"><div class="sec-icon">⏰</div><div><div class="sec-title">Urgência & Escassez</div></div></div>
-    <div class="hooks-grid">
-      <div class="hook"><span class="hook-cat">Urgência</span>"Faltam X dias pro Brasil e você sem camisa"</div>
-      <div class="hook"><span class="hook-cat">Urgência</span>"Pede hoje pra chegar antes de sábado"</div>
-      <div class="hook"><span class="hook-cat">Urgência</span>"Frete demora — pede agora ou perde a estreia"</div>
-      <div class="hook"><span class="hook-cat">Urgência</span>"Preço de hoje só até a estreia"</div>
-      <div class="hook"><span class="hook-cat">Urgência</span>"Depois da estreia o preço sobe"</div>
-      <div class="hook"><span class="hook-cat">Escassez</span>"Restam X amarelas no G"</div>
-      <div class="hook"><span class="hook-cat">Escassez</span>"Última remessa antes da estreia"</div>
-      <div class="hook"><span class="hook-cat">Escassez</span>"Acabou o P, corre pro M"</div>
-      <div class="hook"><span class="hook-cat">Escassez</span>"Esgotou na Centauro, aqui ainda tem"</div>
-      <div class="hook"><span class="hook-cat">Escassez</span>"Quando acabar não tem mais até a Copa"</div>
-      <div class="hook"><span class="hook-cat">Escassez</span>"Já foram 400 essa semana"</div>
-    </div>
-    <div class="alert red"><span class="icon">⚠️</span><div><strong>Escassez só funciona se for real.</strong> "Restam X" verdadeiro converte. Falsa urgência é flagrada pelo algoritmo e pelo usuário — mata confiança e derruba o SPS.</div></div>
-  </div>
-
-  <div class="sec">
-    <div class="sec-head"><div class="sec-icon">😄</div><div><div class="sec-title">Humor & Curiosidade</div></div></div>
-    <div class="hooks-grid">
-      <div class="hook"><span class="hook-cat">Humor</span>"Comprei a camisa da Nike de R$749… mentira, comprei essa de R$34"</div>
-      <div class="hook"><span class="hook-cat">Humor</span>"Meu cartão chorou, mas não foi com essa"</div>
-      <div class="hook"><span class="hook-cat">Humor</span>"Quando o pai vê o preço da Nike vs o da minha"</div>
-      <div class="hook"><span class="hook-cat">Humor</span>"Vai dizer pra sua mãe que gastou R$750 numa camisa?"</div>
-      <div class="hook"><span class="hook-cat">Humor</span>"Tá tão barata que comprei pra torcida inteira"</div>
-      <div class="hook"><span class="hook-cat">Curiosity</span>"Olha o que chegou pra Copa…"</div>
-      <div class="hook"><span class="hook-cat">Curiosity</span>"Ninguém te conta isso sobre camisa de seleção…"</div>
-      <div class="hook"><span class="hook-cat">Curiosity</span>"Adivinha quanto custou essa camisa"</div>
-      <div class="hook"><span class="hook-cat">Curiosity</span>"Por que toda Copa eu compro uma nova?"</div>
-      <div class="hook"><span class="hook-cat">Curiosity</span>"Testei a camisa de R$30 do TikTok Shop e…"</div>
-    </div>
-  </div>
-
-  <div class="sec">
-    <div class="sec-head"><div class="sec-icon">🏆</div><div><div class="sec-title">Nostalgia, Social Proof & Secret/Insider</div></div></div>
-    <div class="hooks-grid">
-      <div class="hook"><span class="hook-cat">Nostalgia</span>"Lembra da camisa de 2002? Essa resgata"</div>
-      <div class="hook"><span class="hook-cat">Nostalgia</span>"A amarelinha clássica voltou"</div>
-      <div class="hook"><span class="hook-cat">Nostalgia</span>"Camisa que seu avô usaria com orgulho"</div>
-      <div class="hook"><span class="hook-cat">Nostalgia</span>"Do penta pro hexa"</div>
-      <div class="hook"><span class="hook-cat">Nostalgia</span>"Essa cor é a Copa da sua infância"</div>
-      <div class="hook"><span class="hook-cat">Social Proof</span>"400 brasileiros já garantiram a deles"</div>
-      <div class="hook"><span class="hook-cat">Social Proof</span>"Olha os recebidos da galera"</div>
-      <div class="hook"><span class="hook-cat">Social Proof</span>"Olha o estoque sumindo"</div>
-      <div class="hook"><span class="hook-cat">Social Proof</span>"Esgotou 3 vezes essa semana"</div>
-      <div class="hook"><span class="hook-cat">Secret</span>"O segredo de quem veste seleção sem gastar R$400"</div>
-      <div class="hook"><span class="hook-cat">Secret</span>"Onde os revendedores compram barato"</div>
-      <div class="hook"><span class="hook-cat">Insider</span>"Sou fornecedor da 25 de Março, deixa eu mostrar"</div>
-      <div class="hook"><span class="hook-cat">Insider</span>"Já despachei 400 camisas, sei o que falo"</div>
-      <div class="hook"><span class="hook-cat">Insider</span>"Olha o que os revendedores escondem"</div>
-    </div>
-  </div>
-
-  <div class="sec">
-    <div class="sec-head"><div class="sec-icon">🧩</div><div><div class="sec-title">Templates Universais Reutilizáveis</div><div class="sec-sub">Preencha os colchetes com seus dados</div></div></div>
-    <div class="g2">
-      <div class="card blue"><div class="label">Template</div><p class="prose">"Se você <strong>[identidade]</strong>, precisa de <strong>[produto]</strong> antes de <strong>[evento]</strong>"</p></div>
-      <div class="card blue"><div class="label">Template</div><p class="prose">"A <strong>[marca]</strong> cobra <strong>[preço alto]</strong>. A minha é <strong>[preço baixo]</strong> e <strong>[benefício]</strong>"</p></div>
-      <div class="card blue"><div class="label">Template</div><p class="prose">"Testei <strong>[produto]</strong> e <strong>[resultado surpreendente]</strong>"</p></div>
-      <div class="card blue"><div class="label">Template</div><p class="prose">"POV: <strong>[situação]</strong> e você <strong>[problema resolvido]</strong>"</p></div>
-      <div class="card blue"><div class="label">Template</div><p class="prose">"Restam só <strong>[X]</strong>, depois <strong>[consequência]</strong>"</p></div>
-      <div class="card blue"><div class="label">Template</div><p class="prose">"Por que toda <strong>[evento]</strong> eu <strong>[comportamento/ritual]</strong>"</p></div>
-    </div>
-  </div>
-
-</div>
-</div>
-
-<!-- TAB 4: MATRIX -->
-<div class="tab-content" id="tab-matrix">
-<div class="page">
-
-  <div class="sec">
-    <div class="sec-head"><div class="sec-icon">🏆</div><div><div class="sec-title">Matriz de Execução — Tier S/A/B/C</div><div class="sec-sub">Baseado em ROI, facilidade operacional, escalabilidade e fit com a operação do TH</div></div></div>
-    <div class="g4">
-      <div class="card green"><div class="card-tag" style="color:var(--green)">Tier S</div><div class="card-text" style="color:#88c898">Rodar <strong>agora</strong>. Alto ROI + escalável + compatível com operação enxuta.</div></div>
-      <div class="card blue"><div class="card-tag" style="color:var(--blue)">Tier A</div><div class="card-text" style="color:#80b0d8">Complemento. Roda em paralelo depois do S estabelecido.</div></div>
-      <div class="card yellow"><div class="card-tag" style="color:var(--yellow)">Tier B</div><div class="card-text" style="color:#c8a858">Teste. Pode trazer resultado mas exige mais esforço ou tem vida útil curta.</div></div>
-      <div class="card red"><div class="card-tag" style="color:var(--red)">Tier C</div><div class="card-text" style="color:#e88080">Evitar. Saturado, inadequado ou corrói margem.</div></div>
-    </div>
-  </div>
-
-  <div class="sec">
-    <div class="sec-head"><div class="sec-icon">⭐</div><div><div class="sec-title">TIER S — Os 15 Formatos Prioritários</div></div></div>
-    <table class="stat-table">
-      <thead><tr><th>#</th><th>Formato</th><th>Viral</th><th>Venda</th><th>AOV</th><th>IA?</th><th>Escala/dia</th></tr></thead>
-      <tbody>
-        <tr><td><div class="tier tier-S">S</div></td><td class="hl">Nike R$449 vs Minha R$34,90</td><td class="g">★★★</td><td class="g">★★★</td><td class="y">Normal</td><td class="g">✓ Hybrid</td><td class="g">10/dia</td></tr>
-        <tr><td><div class="tier tier-S">S</div></td><td class="hl">Acha o Erro (Comparison)</td><td class="g">★★★</td><td class="g">★★★</td><td class="y">Normal</td><td class="g">✓ IA</td><td class="g">8/dia</td></tr>
-        <tr><td><div class="tier tier-S">S</div></td><td class="hl">Recebidos da Copa (Unboxing)</td><td class="y">★★☆</td><td class="g">★★★</td><td class="y">Normal</td><td class="g">✓ Hybrid</td><td class="g">5/dia</td></tr>
-        <tr><td><div class="tier tier-S">S</div></td><td class="hl">"Se Você É Brasileiro…"</td><td class="g">★★★</td><td class="y">★★☆</td><td class="y">Normal</td><td class="g">✓ IA</td><td class="g">10/dia</td></tr>
-        <tr><td><div class="tier tier-S">S</div></td><td class="hl">Kit Família / Todos de Amarelo</td><td class="y">★★☆</td><td class="g">★★★</td><td class="g">Alto R$84</td><td class="g">✓ Hybrid</td><td class="g">5/dia</td></tr>
-        <tr><td><div class="tier tier-S">S</div></td><td class="hl">FOMO Estoque ("Já Despachei 400")</td><td class="y">★★☆</td><td class="g">★★★</td><td class="y">Normal</td><td class="g">✓ IA</td><td class="g">8/dia</td></tr>
-        <tr><td><div class="tier tier-S">S</div></td><td class="hl">Testei a de R$30 (Authority)</td><td class="y">★★☆</td><td class="g">★★★</td><td class="y">Normal</td><td class="y">Hybrid</td><td class="y">3/dia</td></tr>
-        <tr><td><div class="tier tier-S">S</div></td><td class="hl">POV: Chegou Sábado Sem Camisa</td><td class="g">★★★</td><td class="y">★★☆</td><td class="y">Normal</td><td class="g">✓ IA</td><td class="g">8/dia</td></tr>
-        <tr><td><div class="tier tier-S">S</div></td><td class="hl">Reagindo ao Preço Nike (GS)</td><td class="g">★★★</td><td class="y">★★☆</td><td class="y">Normal</td><td class="g">✓ IA</td><td class="g">8/dia</td></tr>
-        <tr><td><div class="tier tier-S">S</div></td><td class="hl">Última Remessa (Urgency)</td><td class="y">★★☆</td><td class="g">★★★</td><td class="y">Normal</td><td class="g">✓ IA</td><td class="g">8/dia</td></tr>
-        <tr><td><div class="tier tier-S">S</div></td><td class="hl">Presente Pro Pai/Namorado</td><td class="y">★★☆</td><td class="g">★★★</td><td class="g">+bundle</td><td class="g">✓ Hybrid</td><td class="g">5/dia</td></tr>
-        <tr><td><div class="tier tier-S">S</div></td><td class="hl">Costura ASMR (Texture)</td><td class="y">★★☆</td><td class="g">★★★</td><td class="y">Normal</td><td class="g">✓ IA</td><td class="g">8/dia</td></tr>
-        <tr><td><div class="tier tier-S">S</div></td><td class="hl">Provador 3 Modelos (↑AOV)</td><td class="y">★★☆</td><td class="g">★★★</td><td class="g">Alto</td><td class="y">Hybrid</td><td class="y">3/dia</td></tr>
-        <tr><td><div class="tier tier-S">S</div></td><td class="hl">Countdown — Faltam X Dias</td><td class="y">★★☆</td><td class="g">★★★</td><td class="y">Normal</td><td class="g">✓ IA</td><td class="g">10/dia</td></tr>
-        <tr><td><div class="tier tier-S">S</div></td><td class="hl">Live Diária (2h, prime time)</td><td class="y">★★☆</td><td class="g">★★★</td><td class="g">Alto</td><td>—</td><td class="g">1 live/dia</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="sec">
-    <div class="sec-head"><div class="sec-icon">🔵</div><div><div class="sec-title">TIER A — 22 Complementares</div></div></div>
-    <table class="stat-table">
-      <thead><tr><th>Formato</th><th>Objetivo</th><th>AOV</th><th>Vida útil</th></tr></thead>
-      <tbody>
-        <tr><td class="hl">Retrô 2002 vs Atual</td><td>Viral nostalgia</td><td class="y">Normal</td><td>Toda Copa</td></tr>
-        <tr><td class="hl">Gerações (Avô/Pai/Filho)</td><td>Emocional + viral</td><td class="g">Alto (kit)</td><td>2 semanas</td></tr>
-        <tr><td class="hl">Tecido no Ventilador</td><td>Textura/qualidade</td><td class="y">Normal</td><td>1 semana</td></tr>
-        <tr><td class="hl">Lavei 5x — Resultados</td><td>Prova de durabilidade</td><td class="y">Normal</td><td>2 semanas</td></tr>
-        <tr><td class="hl">Amarela vs Azul Jordan</td><td>Polêmica/conversão</td><td class="y">Normal</td><td>Toda Copa</td></tr>
-        <tr><td class="hl">Fornecedor do Brás</td><td>Autoridade/insider</td><td class="y">Normal</td><td>2 semanas</td></tr>
-        <tr><td class="hl">Kit Casal Combinando</td><td>AOV alto</td><td class="g">Alto R$54–70</td><td>Toda Copa</td></tr>
-        <tr><td class="hl">Meme: Cartão Chorando</td><td>Humor/viral</td><td class="y">Normal</td><td>5 dias</td></tr>
-        <tr><td class="hl">Reação do Pai ao Preço</td><td>Humor/familiar</td><td class="y">Normal</td><td>1 semana</td></tr>
-        <tr><td class="hl">Escudo Termo vs Bordado</td><td>Comparison técnico</td><td class="y">Normal</td><td>2 semanas</td></tr>
-        <tr><td class="hl">Esgotou na Centauro</td><td>Escassez/prova social</td><td class="y">Normal</td><td>1 semana</td></tr>
-        <tr><td class="hl">Brasileiro de Verdade</td><td>Tribal/patriótico</td><td class="y">Normal</td><td>2 semanas</td></tr>
-        <tr><td class="hl">Provador Feminino</td><td>Novo segmento</td><td class="y">Normal</td><td>2 semanas</td></tr>
-        <tr><td class="hl">Provador Infantil</td><td>Kit família</td><td class="g">Alto</td><td>2 semanas</td></tr>
-        <tr><td class="hl">Todas as Cores (Collection)</td><td>AOV / coleção</td><td class="g">Alto</td><td>Toda Copa</td></tr>
-        <tr><td class="hl">Superstição: Camisa Nova</td><td>Ritual / emocional</td><td class="y">Normal</td><td>Toda Copa</td></tr>
-        <tr><td class="hl">Luz Natural vs Artificial</td><td>Textura visual</td><td class="y">Normal</td><td>1 semana</td></tr>
-        <tr><td class="hl">Kit Torcida Completo</td><td>AOV muito alto</td><td class="g">Muito Alto</td><td>Toda Copa</td></tr>
-        <tr><td class="hl">Comprei pra Família Inteira</td><td>Social proof + AOV</td><td class="g">Alto</td><td>2 semanas</td></tr>
-        <tr><td class="hl">Criança Surpresa com Camisa</td><td>Emocional viral</td><td class="y">Normal</td><td>2 semanas</td></tr>
-        <tr><td class="hl">Churrasco de Jogo — Vlog</td><td>Lifestyle/prova social</td><td class="y">Normal</td><td>1 jogo</td></tr>
-        <tr><td class="hl">Duet com Creator de Futebol</td><td>Afiliado/alcance</td><td class="y">Normal</td><td>1 semana</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="sec">
-    <div class="sec-head"><div class="sec-icon">🚫</div><div><div class="sec-title">TIER C — Evitar</div></div></div>
-    <div class="g2">
-      <div class="card red">
-        <div class="card-tag" style="color:var(--red)">❌ Não rodar</div>
-        <div style="font-size:12px;color:#e88080;line-height:2">
-          Vídeo institucional polido (perde pro UGC barato)<br>
-          Dança trend sem produto visível<br>
-          Avatar IA puro em testimonial longo<br>
-          Vídeo sem camisa nos 3 primeiros segundos<br>
-          Só patriótico sem oferta/preço explícito
-        </div>
-      </div>
-      <div class="card red">
-        <div class="card-tag" style="color:var(--red)">⚠️ Cuidado especial</div>
-        <div style="font-size:12px;color:#e88080;line-height:2">
-          Meme de áudio do momento (morre em 3–5 dias)<br>
-          Countdown com data errada<br>
-          Escassez falsa (queima confiança e SPS)<br>
-          Desconto raso sem bundle (corrói os 27,4%)<br>
-          Vídeo longo (&gt;45s) sem retenção setup
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="sec">
-    <div class="sec-head"><div class="sec-icon">⏳</div><div><div class="sec-title">Ciclo de Vida & Saturação</div></div></div>
-    <table class="stat-table">
-      <thead><tr><th>Vida útil</th><th>Formatos</th><th>Quando trocar</th></tr></thead>
-      <tbody>
-        <tr><td class="y">3–7 dias</td><td>Memes de áudio viral, Countdown datado, Reaction a notícia</td><td>Mesmo hook de 3+ concorrentes no feed</td></tr>
-        <tr><td class="b">1 semana</td><td>Hook de preço específico, Tecido/costura simples, FOMO de data</td><td>CTR cai >20% vs baseline</td></tr>
-        <tr><td class="g">Toda a Copa</td><td>"Se você é brasileiro", Kit família, Comparison original, FOMO de estoque, Unboxing</td><td>Só ao fim da janela</td></tr>
-        <tr><td class="g">Atemporal</td><td>Texture close-up, Prova de durabilidade, Autoridade do vendedor</td><td>Nunca (até zerar estoque)</td></tr>
-      </tbody>
-    </table>
-    <div class="alert blue"><span class="icon">♻️</span><div><strong>Como refrescar sem recriar do zero:</strong> troque apenas os 3 primeiros segundos (novo hook visual/áudio). Mantenha o corpo do vídeo — ele já provou retenção. Troca modular reduz custo de produção em 60–80%.</div></div>
-  </div>
-
-</div>
-</div>
-
-<!-- TAB 5: LIVES -->
-<div class="tab-content" id="tab-lives">
-<div class="page">
-
-  <div class="sec">
-    <div class="sec-head"><div class="sec-icon">📡</div><div><div class="sec-title">Live Shopping — Deep Research</div><div class="sec-sub">Por que funciona, como escalar, SOP completo</div></div></div>
-    <div class="g3">
-      <div class="card green"><div class="card-tag" style="color:var(--green)">Conversão média (McKinsey)</div><div class="card-num" style="color:var(--green)">~30%</div><div class="card-text">Vs ~3% do e-commerce tradicional. Douglas reporta até 40%. Live converte 10× mais.</div></div>
-      <div class="card yellow"><div class="card-tag" style="color:var(--yellow)">TikTok Shop BR</div><div class="card-num" style="color:var(--yellow)">4/5</div><div class="card-text">4 em cada 5 usuários tendem a comprar após assistir uma live. 62% assistem diariamente.</div></div>
-      <div class="card blue"><div class="card-tag" style="color:var(--blue)">Melhor horário</div><div class="card-num" style="color:var(--blue)">19–22h</div><div class="card-text">Prime time BR. Audiência máxima, menor concorrência por atenção vs manhã/tarde.</div></div>
-    </div>
-    <div class="alert green"><span class="icon">🧠</span><div><strong>Por que o cérebro compra mais em live:</strong> o sistema de recompensa (núcleo accumbens) dispara dopamina na ANTECIPAÇÃO da compra. Pressão de tempo + contador ao vivo + comentários reais = prova social que intensifica compra por comparação. FOMO é o fator dominante (estudos TikTok Vietnã/Indonésia).</div></div>
-  </div>
-
-  <div class="sec">
-    <div class="sec-head"><div class="sec-icon">🔄</div><div><div class="sec-title">SOP — Framework de Live Vencedora</div><div class="sec-sub">Estrutura exata para 2h de live de alta conversão</div></div></div>
-    <div class="live-cycle">
-      <div class="cycle-block"><div class="cycle-time">00:00–05:00</div><div class="cycle-title">Abertura & Aquecimento</div><div class="cycle-text">Saudação, explica o produto, âncora de preço Nike R$749. "Fica comigo que daqui a pouco tem surpresa."</div></div>
-      <div class="cycle-block"><div class="cycle-time">05:00–20:00</div><div class="cycle-title">Ciclo 1 — Amarela G/M/P</div><div class="cycle-text">Demo no corpo → prova social ("já foram 40 hoje") → oferta principal → CTA. Repete a cada 3 min.</div></div>
-      <div class="cycle-block"><div class="cycle-time">20:00–35:00</div><div class="cycle-title">Ciclo 2 — Kit Família</div><div class="cycle-text">Empurra bundle 3x. "Você + patroa + filho, sai R$84,90." Retenção: "daqui a 10 min tem flash deal."</div></div>
-      <div class="cycle-block"><div class="cycle-time">35:00–45:00</div><div class="cycle-title">⚡ Flash Deal #1</div><div class="cycle-text">10 min com preço especial só na live. Countdown visual. "Acabou o tempo, acabou o preço."</div></div>
-      <div class="cycle-block"><div class="cycle-time">45:00–70:00</div><div class="cycle-title">Ciclo 3 — Azul Jordan</div><div class="cycle-text">Segundo produto. "Polêmica da parceria Nike × Jordan — você aprova?" Engajamento + conversão.</div></div>
-      <div class="cycle-block"><div class="cycle-time">70:00–85:00</div><div class="cycle-title">Ciclo 4 — Upsell</div><div class="cycle-text">Kit torcida 5 peças ou kit casal. Âncora no kit família já comprado: "se você levou 3, leva o 4º por R$10."</div></div>
-      <div class="cycle-block"><div class="cycle-time">85:00–100:00</div><div class="cycle-title">⚡ Flash Deal #2 + Mystery Gift</div><div class="cycle-text">Segunda oferta relâmpago + revela mystery gift (bandeira/chaveiro). "Compre agora e incluo o brinde."</div></div>
-      <div class="cycle-block"><div class="cycle-time">100:00–120:00</div><div class="cycle-title">🚨 Fechamento — Última Chance</div><div class="cycle-text">Countdown final. "Encerro daqui a 20 min. Esse preço vai embora junto." Repete CTA a cada 2 min. Agradece por nome.</div></div>
-    </div>
-  </div>
-
-  <div class="sec">
-    <div class="sec-head"><div class="sec-icon">💬</div><div><div class="sec-title">Gatilhos de Comunicação ao Vivo</div><div class="sec-sub">50+ frases prontas em PT-BR casual</div></div></div>
-    <div class="g2">
-      <div>
-        <div class="label">Urgência / Escassez</div>
-        <div class="hooks-grid">
-          <div class="hook">"Restam só X amarelas no G, depois não tem mais até a Copa"</div>
-          <div class="hook">"Essa caixa do meu lado é o que sobrou"</div>
-          <div class="hook">"Quando zerar eu encerro a promoção"</div>
-          <div class="hook">"Preço de live — acabou a live, acabou o preço"</div>
-          <div class="hook">"Pede agora pra chegar antes de sábado"</div>
-          <div class="hook">"Tenho só mais 20 minutos nesse preço"</div>
-          <div class="hook">"Deixa o G só pra quem realmente quer, porque vai acabar"</div>
-        </div>
-      </div>
-      <div>
-        <div class="label">Prova Social</div>
-        <div class="hooks-grid">
-          <div class="hook">"Olha o tanto de pedido caindo"</div>
-          <div class="hook">"Já foram 30 nessa meia hora"</div>
-          <div class="hook">"Fulano de Campinas levou 3"</div>
-          <div class="hook">"O G tá voando, só tem M e P agora"</div>
-          <div class="hook">"Quem já pediu, manda o emoji 🟡 no chat"</div>
-          <div class="hook">"Olha quanta gente assistindo — e vocês ainda tão sem camisa?"</div>
-        </div>
-      </div>
-      <div>
-        <div class="label">Patriotismo / Tribal</div>
-        <div class="hooks-grid">
-          <div class="hook">"Vamo vestir o Brasil junto, gente"</div>
-          <div class="hook">"Quem é brasileiro de verdade comenta BRASIL"</div>
-          <div class="hook">"Tua família toda de amarelo dia 13"</div>
-          <div class="hook">"Vai ser o único no churrasco sem camisa?"</div>
-          <div class="hook">"A Nike é R$749. A minha é R$34,90. Escolha fácil."</div>
-        </div>
-      </div>
-      <div>
-        <div class="label">Justificar 2+ Peças / Upsell</div>
-        <div class="hooks-grid">
-          <div class="hook">"Uma pra você, uma pro churrasco, uma de reserva"</div>
-          <div class="hook">"Leva a do filho — sai menos que uma oficial"</div>
-          <div class="hook">"Kit casal combinando no jogo"</div>
-          <div class="hook">"Já que vai pedir, fecha o kit que o frete sai melhor"</div>
-          <div class="hook">"Por mais R$25 leva a azul também"</div>
-          <div class="hook">"Compra 2 e eu mando a bandeira de graça"</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="sec">
-    <div class="sec-head"><div class="sec-icon">📋</div><div><div class="sec-title">Regras Operacionais da Live</div></div></div>
-    <div class="g2">
-      <div>
-        <div class="principle"><div class="p-num">1</div><div class="p-text"><strong>CTA a cada 90–120 segundos.</strong> "Toca no carrinho laranja embaixo" — vocalizado, não só visual.</div></div>
-        <div class="principle"><div class="p-num">2</div><div class="p-text"><strong>Repita a oferta principal a cada 3 min</strong> — a audiência troca constantemente. Quem entrou agora não viu o pitch anterior.</div></div>
-        <div class="principle"><div class="p-num">3</div><div class="p-text"><strong>Pín o produto mais vendido + kit família.</strong> Não mude o pinado durante o ciclo de venda.</div></div>
-        <div class="principle"><div class="p-num">4</div><div class="p-text"><strong>Flash deals no meio e no fechamento,</strong> não na abertura. Reserve o pico de audiência para o produto premium.</div></div>
-        <div class="principle"><div class="p-num">5</div><div class="p-text"><strong>Dia de jogo: live ANTES, não durante.</strong> Audiência máxima no pré-jogo; durante o jogo ninguém assiste live.</div></div>
-        <div class="principle"><div class="p-num">6</div><div class="p-text"><strong>Anuncie a live 2h antes</strong> com 2–3 stories/vídeos curtos de teaser. "Daqui a 2h: flash deal exclusivo na live."</div></div>
-      </div>
-      <div>
-        <div class="principle"><div class="p-num">7</div><div class="p-text"><strong>Chame o nome de quem comentou.</strong> "Obrigado [nome], acabou de pedir" — prova social + retenção + humanização.</div></div>
-        <div class="principle"><div class="p-num">8</div><div class="p-text"><strong>Retenção no loop:</strong> "fica até o fim que tem mystery gift". Sorteio a cada 100 likes. Antecipe próximos ciclos.</div></div>
-        <div class="principle"><div class="p-num">9</div><div class="p-text"><strong>Mostre o produto no corpo, não só no cabide.</strong> Textura, caimento, tamanho real — reduz dúvida de compra.</div></div>
-        <div class="principle"><div class="p-num">10</div><div class="p-text"><strong>Brinde revela no fechamento.</strong> "Todos que pedirem até eu encerrar levam a bandeira de brinde." Urgência final + prêmio.</div></div>
-        <div class="principle"><div class="p-num">11</div><div class="p-text"><strong>Duração: 2h diárias,</strong> 19–22h. Em dias de jogo, live começa 3h antes da partida.</div></div>
-        <div class="principle"><div class="p-num">12</div><div class="p-text"><strong>Reaproveite o melhor vídeo orgânico como live ad</strong> para puxar tráfego pago para a live — sem criar novo criativo.</div></div>
-      </div>
-    </div>
-  </div>
-
-</div>
-</div>
-
-<!-- TAB 6: OFERTAS -->
-<div class="tab-content" id="tab-ofertas">
-<div class="page">
-
-  <div class="sec">
-    <div class="sec-head"><div class="sec-icon">🎁</div><div><div class="sec-title">100 Ofertas Reproduzíveis</div><div class="sec-sub">Mecânicas de oferta testadas para camisa da seleção na Copa</div></div></div>
-    <div class="alert green"><span class="icon">💡</span><div><strong>Regra de ouro:</strong> brinde de baixo custo/alto valor percebido é o melhor instrumento de conversão em live sem corroer margem. Bandeira R$2 → valor percebido R$15–20. Chaveiro R$1,50 → percebido R$10.</div></div>
-  </div>
-
-  <div class="sec">
-    <div class="sec-head"><div class="sec-icon">🥇</div><div><div class="sec-title">Brindes — Mapeamento Completo</div></div></div>
-    <table class="stat-table">
-      <thead><tr><th>Brinde</th><th>Custo R$</th><th>Percebido R$</th><th>↑Ticket</th><th>↑Conv.</th><th>Categoria</th></tr></thead>
-      <tbody>
-        <tr><td class="hl">Bandeira BR pequena</td><td class="g">1–3</td><td class="g">15–20</td><td class="g">Alto</td><td class="g">Alto</td><td><span class="badge badge-green">OURO</span></td></tr>
-        <tr><td class="hl">Pulseira/faixa temática</td><td class="g">1–2</td><td class="g">10–15</td><td class="y">Médio</td><td class="g">Alto</td><td><span class="badge badge-green">OURO</span></td></tr>
-        <tr><td class="hl">Chaveiro seleção</td><td class="g">1–2</td><td class="g">10</td><td class="y">Médio</td><td class="y">Médio</td><td><span class="badge badge-green">OURO</span></td></tr>
-        <tr><td class="hl">Mystery gift</td><td class="g">1–3</td><td class="g">"surpresa"</td><td class="g">Alto</td><td class="g">Muito alto</td><td><span class="badge badge-blue">LIVE</span></td></tr>
-        <tr><td class="hl">Adesivos/cartela</td><td class="g">0,50–1</td><td class="y">5–10</td><td class="y">Médio</td><td class="y">Médio</td><td><span class="badge badge-yellow">Margem alta</span></td></tr>
-        <tr><td class="hl">Broche/pin</td><td class="g">0,50–1</td><td class="y">8</td><td>Baixo</td><td class="y">Médio</td><td><span class="badge badge-yellow">Margem alta</span></td></tr>
-        <tr><td class="hl">Mini bola</td><td class="y">3–5</td><td class="g">20–25</td><td class="g">Alto</td><td class="g">Alto</td><td><span class="badge badge-green">Copa</span></td></tr>
-        <tr><td class="hl">Sacola temática</td><td class="y">2–4</td><td class="y">15</td><td class="y">Médio</td><td class="y">Médio</td><td><span class="badge badge-blue">Escalável</span></td></tr>
-        <tr><td class="hl">Frete grátis &gt;R$60</td><td>variável</td><td class="g">Alto</td><td class="g">Alto</td><td class="g">Muito alto</td><td><span class="badge badge-yellow">Urgência</span></td></tr>
-        <tr><td class="hl">Cupom próxima compra</td><td class="g">R$0</td><td class="y">10–30</td><td class="y">Médio</td><td class="g">Alto</td><td><span class="badge badge-blue">Recompra</span></td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="sec">
-    <div class="sec-head"><div class="sec-icon">⭐</div><div><div class="sec-title">TIER S — Top 10 Ofertas</div></div></div>
-    <div class="g2">
-      <div class="offer-card">
-        <div class="offer-name">🥇 S1 — Kit Família 3 Camisas R$84,90</div>
-        <div class="offer-row"><div class="offer-k">Estrutura</div><div class="offer-v" style="color:var(--green)">3 camisas (tamanhos diferentes)</div></div>
-        <div class="offer-row"><div class="offer-k">Ticket esperado</div><div class="offer-v" style="color:var(--green)">R$84,90</div></div>
-        <div class="offer-row"><div class="offer-k">Complexidade</div><div class="offer-v">2/10</div></div>
-        <div class="offer-row"><div class="offer-k">Momento da live</div><div class="offer-v">Meio (20–70 min)</div></div>
-        <div class="offer-row"><div class="offer-k">Gatilho</div><div class="offer-v" style="color:var(--blue)">Pertencimento familiar</div></div>
-        <div class="offer-row"><div class="offer-k">CTA</div><div class="offer-v">"Escolhe os 3 tamanhos no carrinho"</div></div>
-      </div>
-      <div class="offer-card">
-        <div class="offer-name">🥇 S2 — Compre 2, Leve Bandeira Grátis</div>
-        <div class="offer-row"><div class="offer-k">Estrutura</div><div class="offer-v" style="color:var(--green)">2 camisas R$54,90 + bandeira</div></div>
-        <div class="offer-row"><div class="offer-k">Custo extra</div><div class="offer-v" style="color:var(--green)">R$1–3</div></div>
-        <div class="offer-row"><div class="offer-k">Complexidade</div><div class="offer-v">1/10</div></div>
-        <div class="offer-row"><div class="offer-k">Momento da live</div><div class="offer-v">Meio</div></div>
-        <div class="offer-row"><div class="offer-k">Gatilho</div><div class="offer-v" style="color:var(--blue)">Reciprocidade + Copa</div></div>
-        <div class="offer-row"><div class="offer-k">CTA</div><div class="offer-v">"A bandeira é por minha conta"</div></div>
-      </div>
-      <div class="offer-card">
-        <div class="offer-name">🥇 S3 — Tier 1/2/3 (Quantity Break)</div>
-        <div class="offer-row"><div class="offer-k">Estrutura</div><div class="offer-v" style="color:var(--green)">1=R$29,90 / 2=R$54,90 / 3=R$74,90</div></div>
-        <div class="offer-row"><div class="offer-k">Ticket esperado</div><div class="offer-v" style="color:var(--green)">R$54–75</div></div>
-        <div class="offer-row"><div class="offer-k">Complexidade</div><div class="offer-v">2/10</div></div>
-        <div class="offer-row"><div class="offer-k">Momento da live</div><div class="offer-v">Abertura (âncora)</div></div>
-        <div class="offer-row"><div class="offer-k">Gatilho</div><div class="offer-v" style="color:var(--blue)">Loss aversion (não comprar 2 "perde")</div></div>
-        <div class="offer-row"><div class="offer-k">CTA</div><div class="offer-v">"Vai demorar mesmo, leva 3 de uma vez"</div></div>
-      </div>
-      <div class="offer-card">
-        <div class="offer-name">⚡ S4 — Flash Deal 10 Min (R$26,90)</div>
-        <div class="offer-row"><div class="offer-k">Estrutura</div><div class="offer-v" style="color:var(--yellow)">Preço reduzido por 10 min, só na live</div></div>
-        <div class="offer-row"><div class="offer-k">Margem</div><div class="offer-v" style="color:var(--yellow)">Reduzida — usar com parcimônia</div></div>
-        <div class="offer-row"><div class="offer-k">Complexidade</div><div class="offer-v">2/10</div></div>
-        <div class="offer-row"><div class="offer-k">Momento da live</div><div class="offer-v">Relâmpago (35 e 85 min)</div></div>
-        <div class="offer-row"><div class="offer-k">Gatilho</div><div class="offer-v" style="color:var(--red)">Urgência temporal máxima</div></div>
-        <div class="offer-row"><div class="offer-k">CTA</div><div class="offer-v">"Countdown 10 min. Depois volta o preço normal."</div></div>
-      </div>
-      <div class="offer-card">
-        <div class="offer-name">🥇 S5 — Kit Casal 2 + Chaveiro</div>
-        <div class="offer-row"><div class="offer-k">Estrutura</div><div class="offer-v" style="color:var(--green)">2 camisas + chaveiro de casal R$59,90</div></div>
-        <div class="offer-row"><div class="offer-k">Custo extra</div><div class="offer-v" style="color:var(--green)">R$1,50</div></div>
-        <div class="offer-row"><div class="offer-k">Complexidade</div><div class="offer-v">2/10</div></div>
-        <div class="offer-row"><div class="offer-k">Momento da live</div><div class="offer-v">Meio</div></div>
-        <div class="offer-row"><div class="offer-k">Gatilho</div><div class="offer-v" style="color:var(--blue)">Relacionamento + Copa</div></div>
-        <div class="offer-row"><div class="offer-k">CTA</div><div class="offer-v">"Kit casal para torcer juntos"</div></div>
-      </div>
-      <div class="offer-card">
-        <div class="offer-name">🎁 S6 — Mystery Gift acima de 2 Peças</div>
-        <div class="offer-row"><div class="offer-k">Estrutura</div><div class="offer-v" style="color:var(--green)">Brinde surpresa para pedidos de 2+</div></div>
-        <div class="offer-row"><div class="offer-k">Custo</div><div class="offer-v" style="color:var(--green)">R$1–3</div></div>
-        <div class="offer-row"><div class="offer-k">Complexidade</div><div class="offer-v">3/10</div></div>
-        <div class="offer-row"><div class="offer-k">Momento da live</div><div class="offer-v">Fechamento (90+ min)</div></div>
-        <div class="offer-row"><div class="offer-k">Gatilho</div><div class="offer-v" style="color:var(--blue)">Curiosidade + reciprocidade</div></div>
-        <div class="offer-row"><div class="offer-k">CTA</div><div class="offer-v">"Não vou falar o que é, só vou mandar"</div></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="sec">
-    <div class="sec-head"><div class="sec-icon">📊</div><div><div class="sec-title">Tier A–B — Mais 30+ Ofertas</div></div></div>
-    <div class="hooks-grid">
-      <div class="hook"><span class="hook-cat">Tier A</span>Kit Torcida 5 peças R$129,90</div>
-      <div class="hook"><span class="hook-cat">Tier A</span>Drop limitado azul Jordan (100 unid/live)</div>
-      <div class="hook"><span class="hook-cat">Tier A</span>Combo amarela + azul R$59,90</div>
-      <div class="hook"><span class="hook-cat">Tier A</span>Bundle pai + filho R$54,90</div>
-      <div class="hook"><span class="hook-cat">Tier A</span>Adesivo grátis acima de 1 peça</div>
-      <div class="hook"><span class="hook-cat">Tier A</span>Pôster grátis acima de 2 peças</div>
-      <div class="hook"><span class="hook-cat">Tier A</span>Frete grátis acima de R$59,90</div>
-      <div class="hook"><span class="hook-cat">Tier A</span>Cupom 10% próxima compra pós-Copa</div>
-      <div class="hook"><span class="hook-cat">Tier A</span>4ª camisa R$10 (compre 3 leve 4)</div>
-      <div class="hook"><span class="hook-cat">Tier A</span>Pulseira grátis acima de 2 peças</div>
-      <div class="hook"><span class="hook-cat">Tier A</span>Flash deal feminino 15 min</div>
-      <div class="hook"><span class="hook-cat">Tier A</span>Flash deal infantil 10 min</div>
-      <div class="hook"><span class="hook-cat">Tier B</span>Kit churrasco (camisa + copo)</div>
-      <div class="hook"><span class="hook-cat">Tier B</span>Desconto progressivo por comentário</div>
-      <div class="hook"><span class="hook-cat">Tier B</span>Sortudo do chat (sorteio ao vivo)</div>
-      <div class="hook"><span class="hook-cat">Tier B</span>Combo 5 peças retrô 2002</div>
-      <div class="hook"><span class="hook-cat">Tier B</span>Tier tamanhos (GG desconto)</div>
-      <div class="hook"><span class="hook-cat">Tier B</span>Flash deal por time de grupo</div>
-      <div class="hook"><span class="hook-cat">Tier B</span>Kit 4 amigos R$99,90</div>
-      <div class="hook"><span class="hook-cat">Tier B</span>Bundle com mini bola R$49,90</div>
-    </div>
-  </div>
-
-</div>
-</div>
-
-<!-- TAB 7: PLAYBOOK -->
-<div class="tab-content" id="tab-playbook">
-<div class="page">
-
-  <div class="sec">
-    <div class="sec-head"><div class="sec-icon">📋</div><div><div class="sec-title">Os 20 Princípios Universais</div><div class="sec-sub">Regras práticas derivadas de padrões observáveis de vendas de jersey no TikTok</div></div></div>
-    <div class="principle"><div class="p-num">01</div><div class="p-text"><strong>Mostre textura/escudo/tecido nos primeiros 3 segundos.</strong> Jersey converte mais com material à mostra cedo — o comprador precisa "tocar" antes de decidir. Primeiro 3s = 92% de retenção.</div></div>
-    <div class="principle"><div class="p-num">02</div><div class="p-text"><strong>Hook com preço explícito (vs Nike R$449/R$749) sempre supera hook só patriótico.</strong> Ancoragem de preço é a alavanca mais forte desse mercado — combustível gratuito e abundante.</div></div>
-    <div class="principle"><div class="p-num">03</div><div class="p-text"><strong>Patriotismo funciona melhor combinado com nostalgia ou FOMO, não isolado.</strong> Patriotismo puro gera like; patriotismo + "acabando" ou + "2002" gera compra.</div></div>
-    <div class="principle"><div class="p-num">04</div><div class="p-text"><strong>POVs performam melhor próximo de jogos do Brasil</strong> — nos 3 dias antes e nas 24h depois de vitória. Timing é o multiplicador do formato.</div></div>
-    <div class="principle"><div class="p-num">05</div><div class="p-text"><strong>Luz natural + mão humana vence vídeo profissional polido em DTC barato.</strong> Autenticidade percebida supera produção cara nesse ticket e canal.</div></div>
-    <div class="principle"><div class="p-num">06</div><div class="p-text"><strong>Retenção nos 3s distribui.</strong> Vídeo &lt;15s com 60%+ de retenção recebe distribuição orgânica. Front-load o valor — não construa até a oferta, comece nela.</div></div>
-    <div class="principle"><div class="p-num">07</div><div class="p-text"><strong>Pattern interrupt a cada 3–5 segundos</strong> (corte/zoom/texto/música) sustenta atenção em vídeos acima de 15s.</div></div>
-    <div class="principle"><div class="p-num">08</div><div class="p-text"><strong>Repita o CTA a cada 90–120s na live</strong> — a audiência troca constantemente. Quem entrou agora não viu o pitch anterior. Vocalize: "toca no carrinho laranja aqui embaixo."</div></div>
-    <div class="principle"><div class="p-num">09</div><div class="p-text"><strong>Bundle/kit é a forma mais rápida de subir AOV sem gastar com tráfego.</strong> Kit família move o ticket de R$29 para R$84 sem custo de aquisição adicional.</div></div>
-    <div class="principle"><div class="p-num">10</div><div class="p-text"><strong>Ancore TUDO contra a Nike R$449/R$749.</strong> É a maior alavanca de valor percebido disponível no mercado — e é gratuita, pública e abundante.</div></div>
-    <div class="principle"><div class="p-num">11</div><div class="p-text"><strong>Frete de 7 dias é a objeção #1.</strong> Anuncie prazo honesto e converta a limitação em urgência: "pede hoje pra chegar antes do 2º jogo (19/06)."</div></div>
-    <div class="principle"><div class="p-num">12</div><div class="p-text"><strong>UGC humano carrega confiança que IA não replicar.</strong> IA para volume e teste de hook; humano para testimonial e POV. Nunca use avatar IA em "eu uso isso" — não converte.</div></div>
-    <div class="principle"><div class="p-num">13</div><div class="p-text"><strong>Escassez só funciona se for real.</strong> "Restam X" verdadeiro converte. Falsa urgência é detectada e mata a confiança — e derruba SPS via cancelamentos.</div></div>
-    <div class="principle"><div class="p-num">14</div><div class="p-text"><strong>Crie 5–30 criativos/dia; mate o que não retém 60% nos 3s em 24–48h.</strong> Volume de teste é a vantagem competitiva do pequeno seller vs marca com orçamento de criação.</div></div>
-    <div class="principle"><div class="p-num">15</div><div class="p-text"><strong>O pico de demanda ANTECEDE a estreia.</strong> 44% dos compradores antecipam em mais de 1 semana. Máxima intensidade 10–13/06. Não economize energia para "depois."</div></div>
-    <div class="principle"><div class="p-num">16</div><div class="p-text"><strong>Dia de jogo: live ANTES, não durante.</strong> Durante o jogo, zero audiência. Pré-jogo = hype máximo, disposição a comprar máxima, competição mínima.</div></div>
-    <div class="principle"><div class="p-num">17</div><div class="p-text"><strong>Posicione como "a camisa que todo brasileiro pode ter",</strong> não como "falsa". A função simbólica do produto (identidade, pertencimento) é idêntica à oficial — a diferença é só o preço.</div></div>
-    <div class="principle"><div class="p-num">18</div><div class="p-text"><strong>Pix é o pagamento de 57% dos compradores Copa.</strong> Comunique a facilidade de pagamento no vídeo e na live — reduz fricção de finalização.</div></div>
-    <div class="principle"><div class="p-num">19</div><div class="p-text"><strong>Reaproveite o melhor vídeo orgânico como live ad</strong> para puxar tráfego pago — zero custo de criação de novo criativo, distribuição de algo já validado.</div></div>
-    <div class="principle"><div class="p-num">20</div><div class="p-text"><strong>Desconto raso é o pior instrumento.</strong> Cada ponto de desconto come diretamente os 27,4% de margem. Bundle, brinde e ancoragem de valor são instrumentos superiores em toda dimensão.</div></div>
-  </div>
-
-  <div class="sec">
-    <div class="sec-head"><div class="sec-icon">🔬</div><div><div class="sec-title">Psicologia da Live Shopping</div><div class="sec-sub">O que muda no cérebro durante a live e como explorar eticamente</div></div></div>
-    <div class="g2">
-      <div>
-        <div class="card blue" style="margin-bottom:10px">
-          <div class="card-tag" style="color:var(--blue)">Neurociência da compra por impulso</div>
-          <div style="font-size:12px;color:#80b0d8;line-height:1.8">O núcleo accumbens dispara dopamina na <strong>antecipação</strong> da compra — não na compra em si. Isso significa que o "vou comprar" já gera prazer antes de finalizar. A live captura esse momento pré-decisão com pressão de tempo que reduz o retorno ao raciocínio analítico.</div>
-        </div>
-        <div class="card" style="margin-bottom:10px">
-          <div class="card-tag">Crowd Psychology em live</div>
-          <div style="font-size:12px;color:var(--muted);line-height:1.8">Ver "já foram 40 hoje" e nomes de pessoas comprando ativa o <strong>comportamento de manada</strong> — validação social como atalho cognitivo. É o mesmo mecanismo da torcida no estádio. A Copa potencializa porque torcida coletiva já é o estado emocional de base.</div>
-        </div>
-      </div>
-      <div>
-        <div class="card yellow" style="margin-bottom:10px">
-          <div class="card-tag" style="color:var(--yellow)">FOMO — o gatilho dominante</div>
-          <div style="font-size:12px;color:#c8a858;line-height:1.8">Estudos TikTok Shop (Vietnã e Indonésia): FOMO é o preditor mais forte de compra por impulso em live shopping. "Acabando" + contador + cor de estoque zerando = estado de ansiedade que <strong>reverte a inércia</strong> de "vou pensar."</div>
-        </div>
-        <div class="card green">
-          <div class="card-tag" style="color:var(--green)">Como explorar eticamente</div>
-          <div style="font-size:12px;color:#88c898;line-height:1.8">Escassez real, prazo honesto, preço justo. A conversão de live é sustentável quando o comprador recebe exatamente o que esperava — isso alimenta avaliações positivas, SPS alto e recompra. Manipulação queima a conta.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div>
-</div>
-
-<!-- TAB 8: AÇÃO -->
-<div class="tab-content" id="tab-acao">
-<div class="page">
-
-  <div class="sec">
-    <div class="sec-head"><div class="sec-icon">⚡</div><div><div class="sec-title">Plano de Ação — Próximos 30 Dias</div><div class="sec-sub">Prioridades calibradas para a operação real: 2 lojas, 100 pedidos/dia, ticket R$29–74, frete 7 dias</div></div></div>
-
-    <div class="alert red"><span class="icon">🔴</span><div><strong>HOJE (10/06) — URGENTE:</strong> Bata o cap de 50 pedidos/dia nas DUAS lojas. Comunique prazo honesto no produto. Comece as lives às 19h. Suba o preço para R$34,90/R$69,90.</div></div>
-    <div class="alert yellow"><span class="icon">🟡</span><div><strong>ESTA SEMANA (10–16/06) — Alta prioridade:</strong> 5–15 criativos/dia Tier S. Lives diárias 2h. Despachar TODO DIA sem acumular. Estoque amarelo: compre antes de sábado.</div></div>
-    <div class="alert blue"><span class="icon">🔵</span><div><strong>SEMANAS 2–3 (17–30/06):</strong> Destravar SPS (30 entregues). Ativar afiliados 10–12%. Reaproveitar melhor orgânico como live ad. Monitorar resultado dos jogos.</div></div>
-  </div>
-
-  <div class="sec">
-    <div class="sec-head"><div class="sec-icon">📆</div><div><div class="sec-title">Calendário Tático</div></div></div>
-    <div class="timeline">
-      <div class="tl-item">
-        <div class="tl-dot-wrap"><div class="tl-dot" style="background:var(--red)"></div><div class="tl-line"></div></div>
-        <div class="tl-body">
-          <div class="tl-date">10–12/06 — PICO PRÉ-ESTREIA</div>
-          <div class="tl-title" style="color:var(--red)">🔥 Máxima intensidade agora</div>
-          <div class="tl-text">Lives 19h–21h. Criativos S1+S2+S6 (Nike vs minha + FOMO). Compra de amarelo. Despacho diário. Sobe preço R$34,90/R$69,90. Comunicação de prazo honesta.</div>
-        </div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-dot-wrap"><div class="tl-dot" style="background:var(--yellow)"></div><div class="tl-line"></div></div>
-        <div class="tl-body">
-          <div class="tl-date">13/06 (SAB) — Estreia Brasil × Marrocos</div>
-          <div class="tl-title" style="color:var(--yellow)">Live 3h antes do jogo</div>
-          <div class="tl-text">Live especial "véspera da estreia". Flash deal limitado. Mystery gift. "Pede agora pra chegar antes do 2º jogo." Não transmita durante o jogo — zero audiência.</div>
-        </div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-dot-wrap"><div class="tl-dot" style="background:var(--green)"></div><div class="tl-line"></div></div>
-        <div class="tl-body">
-          <div class="tl-date">14–18/06 — Pós-estreia</div>
-          <div class="tl-title" style="color:var(--green)">2º pico se Brasil ganhou</div>
-          <div class="tl-text">+412% de buscas no dia seguinte à vitória (2022). Sustentar preço. Novo criativo "o Brasil ganhou e você ainda sem camisa?". Lives diárias. Monitorar SPS.</div>
-        </div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-dot-wrap"><div class="tl-dot" style="background:var(--blue)"></div><div class="tl-line"></div></div>
-        <div class="tl-body">
-          <div class="tl-date">19/06 (QUI) — 2º Jogo Brasil</div>
-          <div class="tl-title" style="color:var(--blue)">Pedidos de 12/06 chegam hoje</div>
-          <div class="tl-text">Urgência: "pede hoje pra chegar antes do 3º jogo". Se SPS desbloqueado: ativar Flash Deals na plataforma. Se afiliados ativos: puxar com comissão 10–12%.</div>
-        </div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-dot-wrap"><div class="tl-dot" style="background:var(--purple)"></div><div class="tl-line"></div></div>
-        <div class="tl-body">
-          <div class="tl-date">24/06 — 3º Jogo / Oitavas começam</div>
-          <div class="tl-title" style="color:var(--purple)">Monitor do resultado do grupo</div>
-          <div class="tl-text">Se Brasil avança bem → 3ª onda de demanda, não zere estoque. Se classificação sofrida → prepare liquidação. Decisão de recompra aqui.</div>
-        </div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-dot-wrap"><div class="tl-dot" style="background:var(--red)"></div></div>
-        <div class="tl-body">
-          <div class="tl-date">Eliminação — gatilho imediato</div>
-          <div class="tl-title" style="color:var(--red)">⚠️ Plano de liquidação acionado</div>
-          <div class="tl-text">-20% imediato nas 24h. -30% em 48h. Pivote para retrô (1970/2002) ou outras seleções (Argentina/Portugal têm demanda com menos concorrência). Não segure estoque esperando "voltar" — historicamente não volta.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="sec">
-    <div class="sec-head"><div class="sec-icon">🎯</div><div><div class="sec-title">Meta R$100k/45 dias — Leitura Honesta</div></div></div>
-    <div class="g3">
-      <div class="card green">
-        <div class="card-tag" style="color:var(--green)">Caminho para R$100k</div>
-        <div style="font-size:13px;color:#88c898;line-height:1.8">
-          Ticket meta: <strong>R$60–75</strong><br>
-          Pedidos/dia: <strong>100 (cap atual)</strong><br>
-          Receita pico: <strong>R$6.000–7.500/dia</strong><br>
-          Dias fortes necessários: <strong>~17–20</strong><br>
-          Janela real: <strong>10/06 → Brasil joga</strong>
-        </div>
-      </div>
-      <div class="card yellow">
-        <div class="card-tag" style="color:var(--yellow)">Gatilhos de desbloqueio</div>
-        <div style="font-size:13px;color:#c8a858;line-height:1.8">
-          SPS ≥2,5 → Flash Deals<br>
-          SPS ≥3,5 → Afiliados/campanhas<br>
-          SPS ≥4,0 → Visibilidade +30%<br>
-          Padrão → cap 200/dia<br>
-          Premium → cap 500/dia
-        </div>
-      </div>
-      <div class="card red">
-        <div class="card-tag" style="color:var(--red)">Riscos reais</div>
-        <div style="font-size:13px;color:#e88080;line-height:1.8">
-          Cap 50/dia/loja (limita GMV)<br>
-          Frete 7 dias (mata impulso)<br>
-          SPS ainda não calculado<br>
-          Eliminação antecipada Brasil<br>
-          IPR (camisa licenciada)
-        </div>
-      </div>
-    </div>
-    <div class="alert green"><span class="icon">🏆</span><div><strong>A disciplina de margem é tudo.</strong> Bundle (kit família/casal) é o instrumento #1 para subir AOV sem tráfego pago. Brinde de baixo custo sobe conversão sem corroer os 27,4%. Desconto raso é o único inimigo real da meta — evite-o.</div></div>
-  </div>
-
-  <div class="sec">
-    <div class="sec-head"><div class="sec-icon">📊</div><div><div class="sec-title">KPIs para Monitorar</div></div></div>
-    <div class="g2">
-      <div>
-        <div class="label">Monitorar diariamente</div>
-        <div class="principle"><div class="p-num">→</div><div class="p-text">Pedidos/dia por loja (meta: bater o cap de 50)</div></div>
-        <div class="principle"><div class="p-num">→</div><div class="p-text">SPS (quando desbloqueado — meta ≥3,5)</div></div>
-        <div class="principle"><div class="p-num">→</div><div class="p-text">Taxa de cancelamento (meta: &lt;5%)</div></div>
-        <div class="principle"><div class="p-num">→</div><div class="p-text">Reclamações de prazo nos comentários</div></div>
-        <div class="principle"><div class="p-num">→</div><div class="p-text">Ticket médio (meta: R$60–75)</div></div>
-      </div>
-      <div>
-        <div class="label">Gatilhos de parada</div>
-        <div class="principle" style="border-color:var(--red-dim)"><div class="p-num" style="color:var(--red)">!</div><div class="p-text">Brasil eliminado → liquidar em 24–48h</div></div>
-        <div class="principle" style="border-color:var(--red-dim)"><div class="p-num" style="color:var(--red)">!</div><div class="p-text">Cancelamentos subirem +10% vs semana anterior</div></div>
-        <div class="principle" style="border-color:var(--red-dim)"><div class="p-num" style="color:var(--red)">!</div><div class="p-text">SPS cair abaixo de 3,0 (visibilidade cai)</div></div>
-        <div class="principle" style="border-color:var(--red-dim)"><div class="p-num" style="color:var(--red)">!</div><div class="p-text">Estoque amarelo zerado sem recompra disponível</div></div>
-        <div class="principle" style="border-color:var(--red-dim)"><div class="p-num" style="color:var(--red)">!</div><div class="p-text">Aviso de IPR/infração na conta</div></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="cta-block">
-    <h3>🏆 A janela fecha em dias. A demanda está aqui.</h3>
-    <p>O mercado está comprado: 59% dos brasileiros querem camisa, R$1,2bi em faturamento de e-com já no YTD, e a Nike entregou a âncora de preço perfeita com a camisa de R$749.<br>A diferença entre quem captura e quem fica assistindo é a execução nos próximos 9 dias.</p>
-    <br>
-    <p style="color:var(--green);font-weight:600">Live hoje. Criativos amanhã. Despacho diário. Bundle no carrinho.</p>
-  </div>
-
-  <div style="margin-top:32px;padding:20px;background:var(--surface2);border:1px solid var(--border);border-radius:10px">
-    <div class="label">⚠️ Ressalvas importantes</div>
-    <p class="prose">Dados de mercado do TikTok Shop BR (GMV 161×, 62% assistem lives) vêm de fontes da própria plataforma/imprensa e podem ter viés otimista. A conversão de live "até 30%" (McKinsey) é benchmark de melhor caso global — espere 8–15% no início. <strong>Risco jurídico/IPR:</strong> vender réplica de marca licenciada toca propriedade intelectual da Nike/CBF. Posicione como camisa "estilo torcedor/genérica", evite reproduzir logos protegidos, e monitore o painel de violações regularmente. Uma denúncia de IP pode suspender a conta e congelar saques das duas lojas.</p>
-  </div>
-
-</div>
-</div>
-
-<script>
-// Tab switching
-document.querySelectorAll('.tab-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const tab = btn.dataset.tab;
-    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-    btn.classList.add('active');
-    document.getElementById('tab-' + tab).classList.add('active');
-    window.scrollTo({top: 0, behavior: 'smooth'});
-  });
-});
-
-// Accordion
-function toggleAcc(btn) {
-  btn.classList.toggle('open');
-  const body = btn.nextElementSibling;
-  body.classList.toggle('open');
-}
-
-// Animate bars on load (intersection observer)
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.querySelectorAll('.bar-fill').forEach(bar => {
-        bar.style.transition = 'width 1s ease';
-      });
-    }
-  });
-}, {threshold: 0.3});
-document.querySelectorAll('.bar-chart').forEach(el => observer.observe(el));
-</script>
 </body>
 </html>
